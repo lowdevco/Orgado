@@ -1,6 +1,7 @@
 import React from "react";
-import "../css/contact.css";
-import useContactForm from "../Hooks/useContactForm";
+import "../../css/contact-css/contact.css";
+
+import useContactForm from "../../Hooks/useContactForm";
 
 function Contact() {
 

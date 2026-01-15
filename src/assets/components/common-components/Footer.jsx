@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/footer.css";
-import footerlogo from "../image/logo.webp";
+import "../../css/common-css/footer.css";
+import footerlogo from "../../image/common-images/logo.webp";
 
 function Footer() {
   return (

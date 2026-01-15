@@ -1,6 +1,7 @@
 import React from "react";
-import navbarlogo from "../image/logo.webp";
-import "../css/navbar-common.css";
+import navbarlogo from "../../image/common-images/logo.webp";
+import "../../css/common-css/navbar-common.css";
+
 
 function NavbarCommon() {
   return (

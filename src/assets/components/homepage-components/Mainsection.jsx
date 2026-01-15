@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/mainsection.css";
-import swirl from "../image/swirl.png";
+import "../../css/hompage-css/mainsection.css";
+import swirl from "../../image/hompage-images/swirl.png";
 
 function Mainsection() {
   return (

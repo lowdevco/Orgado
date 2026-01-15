@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/subbar.css";
+import "../../css/hompage-css/subbar.css";
 
 function Subbar() {
   return (

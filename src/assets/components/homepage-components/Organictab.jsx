@@ -1,5 +1,5 @@
 import React from 'react'
-import "../css/organic-tab.css";
+import "../../css/hompage-css/organic-tab.css";
 
 function Organictab() {
   return (

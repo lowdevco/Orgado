@@ -1,7 +1,7 @@
 #main-section{
     height: 82.2vh;
     background-color: rgb(235, 235, 235);
-    background-image: url(../image/homepage.png);
+    background-image: url(../../image/hompage-images/homepage.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@
 }
 
 .moto-description button{
-    background-color:#699c47;
+    background-color:#699c47 !important;
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -57,7 +57,7 @@
 }
 
 .moto-description button:hover{
-    background-color: white;
+    background-color: white !important;
     color: #699c47;
     border: #699c47 solid 2px;
     transition: background-color 0.3s ease;

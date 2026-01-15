@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/tabs.css";
+import "../../css/hompage-css/tabs.css";
 
 function Tabs() {
   return (
