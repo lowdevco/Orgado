@@ -69,7 +69,7 @@
 #navbar-id {
   position: sticky;
   top: 0;
-  z-index: 10000;
+  z-index: 1000;
   box-shadow: 0 0.2px 5px rgb(197, 197, 197);
   background-color: white;
   height: 100px;
@@ -91,4 +91,25 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
+}
+.navbar-container {
+  flex-wrap: nowrap;
+}
+
+
+.navbar-right-icons {
+  display: flex;
+  align-items: center;
+}
+
+
+@media (max-width: 576px) {
+  .navbar-right-icons {
+    gap: 12px !important;
+  }
+
+  .navbar-brand img {
+    max-width: 120px;
+    height: auto;
+  }
 }

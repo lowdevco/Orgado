@@ -8,9 +8,14 @@ function Footer() {
       <div className="footer-top container-fluid d-flex justify-content-center align-items-center">
         <div className="container">
           <div className="d-flex justify-content-center align-items-center mb-5">
-            <a href=""><img src={footerlogo} alt="logo" /></a>
+            <a href="">
+              <img src={footerlogo} alt="logo" />
+            </a>
           </div>
-          <div className="d-flex justify-content-center align-items-center gap-5 mb-4" id="footer-links">
+          <div
+            className="d-flex justify-content-center align-items-center gap-5 mb-4 "
+            id="footer-links"
+          >
             <div>
               <a href="">
                 <h6>ABOUT OUR COMPANY</h6>
@@ -42,7 +47,10 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="d-flex justify-content-center align-items-center gap-4" id="footer-socials">
+          <div
+            className="d-flex justify-content-center align-items-center gap-4"
+            id="footer-socials"
+          >
             <a href="" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,12 +103,16 @@ function Footer() {
         </div>
       </div>
 
-
-        <div className="footer-bottom d-flex justify-content-center align-items-center">
-            <div>
-                <p>All Rights Reserved | Copyrighted by ©2023 <a href="" target="_blank">BDevs</a></p>
-            </div>
+      <div className="footer-bottom d-flex justify-content-center align-items-center">
+        <div>
+          <p>
+            All Rights Reserved | Copyrighted by ©2023{" "}
+            <a href="" target="_blank">
+              BDevs
+            </a>
+          </p>
         </div>
+      </div>
     </footer>
   );
 }

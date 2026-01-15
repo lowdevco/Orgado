@@ -1,24 +1,27 @@
 import React from "react";
 import "../css/contact.css";
+import useContactForm from "../Hooks/useContactForm";
 
 function Contact() {
 
-  function handleSubmit(o){
-    o.preventDefault();
+  const {formData,handleDataChange,handleDataSubmit} = useContactForm();
 
-    const name = o.target.name.value
-    const phone = o.target.phone.value
-    const mail = o.target.mail.value
-    const msg = o.target.message.value
+  // function handleSubmit(o){
+  //   o.preventDefault();
 
-    {
-      console.log("Name: ",name);
-      console.log("Ph: ",phone);
-      console.log("Email: ",mail);
-      console.log("Message: ",msg);
-    }
+  //   const name = o.target.name.value
+  //   const phone = o.target.phone.value
+  //   const mail = o.target.mail.value
+  //   const msg = o.target.message.value
 
-  }
+  //   {
+  //     console.log("Name: ",name);
+  //     console.log("Ph: ",phone);
+  //     console.log("Email: ",mail);
+  //     console.log("Message: ",msg);
+  //   }
+
+  // }
 
   return (
     <section className="container">
@@ -30,7 +33,7 @@ function Contact() {
           {/* Left tab */}
           <div className="col-8 container" id="contact-lt">
 
-            <form className="contact-form"  onSubmit={handleSubmit}>
+            <form className="contact-form" onSubmit={handleDataSubmit}>
               <div className="contact-lt-text mb-4">
                 <h1 style={{ fontSize: 60, fontWeight: 700 }}>Get in Touch</h1>
               </div>
@@ -42,6 +45,8 @@ function Contact() {
                     id="name"
                     placeholder="Name"
                     name="name"
+                    value={formData.name}
+                    onChange={handleDataChange}
                   />
                 </div>
                 {/* {phone} */}
@@ -51,6 +56,8 @@ function Contact() {
                     id="phone"
                     placeholder="Phone"
                     name="phone"
+                    value={formData.phone}
+                    onChange={handleDataChange}
                   />
                 </div>
               </div>
@@ -61,6 +68,8 @@ function Contact() {
                   id="mail"
                   placeholder="Email"
                   name="mail"
+                  value={formData.mail}
+                  onChange={handleDataChange}
                 />
               </div>
               {/* {message} */}
@@ -70,6 +79,9 @@ function Contact() {
                   id="message"
                   placeholder="Messages"
                   name="message"
+                  value={formData.message}
+                  onChange={handleDataChange}
+                  type
                 />
               </div>
 
@@ -119,7 +131,7 @@ function Contact() {
                       width="16"
                       height="16"
                       fill="currentColor"
-                      class="bi bi-envelope"
+                      className="bi bi-envelope"
                       viewBox="0 0 16 16"
                     >
                       <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
@@ -140,7 +152,7 @@ function Contact() {
                       width="16"
                       height="16"
                       fill="currentColor"
-                      class="bi bi-geo-alt"
+                      className="bi bi-geo-alt"
                       viewBox="0 0 16 16"
                     >
                       <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
