@@ -19,8 +19,8 @@ function HomeProductCategory() {
         <div className=" product-tab2 ">
           <div>
             <h6>Orgainic</h6>
-            <a href="">Meat & Milk</a>
-            <p>Premium quality meat & milk</p>
+            <a href="">Vegetable</a>
+            <p>Premium quality vegetables</p>
             <button className=" btn product-btn">
                 <a href="" style={{fontSize:16}}>Shop Now</a>
             </button>
@@ -30,8 +30,8 @@ function HomeProductCategory() {
         <div className=" product-tab3 ">
           <div>
             <h6>Orgainic</h6>
-            <a href="">Meat & Milk</a>
-            <p>Premium quality meat & milk</p>
+            <a href="">Food and Fuits</a>
+            <p>Premium quality Fresh produce</p>
             <button className="btn product-btn">
                 <a href="" style={{fontSize:16}}>Shop Now</a>
             </button>

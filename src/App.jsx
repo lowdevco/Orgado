@@ -8,6 +8,7 @@ import NavbarCommon from "./assets/components/common-components/NavbarCommon";
 import Organictab from "./assets/components/homepage-components/Organictab";
 import Subbar from "./assets/components/homepage-components/Subbar";
 import Tabs from "./assets/components/homepage-components/Tabs";
+import TrendingProduct from "./assets/components/homepage-components/TrendingProduct";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Tabs />
       <Organictab />
       <HomeProductCategory />
+      <TrendingProduct/>
       {/* <Contact /> */}
       <Footer />
     </>
