@@ -1,11 +1,11 @@
 import React from "react";
 import navbarlogo from "../../image/common-images/logo.webp";
 import "../../css/hompage-css/navbar.css";
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
 
-    
     <nav className="navbar">
       <div className="container-fluid" id="navbar-id">
         <div className="container-fluid d-flex justify-content-between py-3 align-items-center navbar-container">
@@ -17,11 +17,13 @@ function Navbar() {
 
           <div className="d-flex justify-content-evenly gap-4 align-items-center">
             <div className="d-flex ">
-              <h6>Home</h6>
+              <h6>
+              <Link to="/" style={{textDecoration:"none",color:"black"}} className="nav-link-custom">Home</Link>
+              </h6>
             </div>
             <div className="d-flex">
               <h6>
-                Shop{" "}
+                <Link to="/shop"style={{textDecoration:"none",color:"black"}} className="nav-link-custom">Shop</Link>{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -39,7 +41,7 @@ function Navbar() {
             </div>
             <div className="d-flex">
               <h6>
-                Pages{" "}
+                <Link to="/page"style={{textDecoration:"none",color:"black"}} className="nav-link-custom">Pages</Link>{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -56,13 +58,19 @@ function Navbar() {
               </h6>
             </div>
             <div>
-              <h6>Blog</h6>
+              <h6>
+              <Link to="/blog"style={{textDecoration:"none",color:"black"}} className="nav-link-custom">Blog</Link>
+              </h6>
             </div>
             <div>
-              <h6>Contact</h6>
+              <h6>
+              <Link to="/contact"style={{textDecoration:"none",color:"black"}} className="nav-link-custom">Contact</Link>
+              </h6>
             </div>
             <div>
-              <h6>Track Order</h6>
+              <h6>
+              <Link to="/order"style={{textDecoration:"none",color:"black"}} className="nav-link-custom">Track Order</Link>
+              </h6>
             </div>
           </div>
 
@@ -71,7 +79,7 @@ function Navbar() {
               <div>
                 <input type="text" className="searchbar-input" />
               </div>
-              <div>
+              <div >
                 <button>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +97,7 @@ function Navbar() {
           </div>
 
           <div className="d-flex justify-content-evenly gap-4">
-            <div className="navbar-icon">
+            <div className="navbar-icon1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -100,9 +108,10 @@ function Navbar() {
               >
                 <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
               </svg>
+              <span className="navbar-badge">0</span>
             </div>
 
-            <div className="navbar-icon">
+            <div className="navbar-icon1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -113,9 +122,10 @@ function Navbar() {
               >
                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
               </svg>
+              <span className="navbar-badge">0</span>
             </div>
 
-            <div className="navbar-icon">
+            <div className="navbar-icon1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

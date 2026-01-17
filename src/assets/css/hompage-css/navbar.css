@@ -19,7 +19,7 @@
   background-color: transparent;
 }
 
-.navbar-icon {
+.navbar-icon1 {
   cursor: pointer;
   padding: 5px;
   border-radius: 50%;
@@ -56,15 +56,30 @@
     justify-content: center;
 }
 
-#navbar-id h6:hover{
-  color: #699c47;
+
+.nav-link-custom:hover{
+  color: #699c47 !important;
   cursor: pointer;
 }
 
+
 nav{
-  padding: 0px !important;
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  left: 0;
+  position: sticky !important;
+  width: 100% !important;
+  z-index: 1000 !important;
+}
+
+.navbar-icon1 span{
+  position: absolute;
+ top: 13px;
+ margin-left: 22px;
+  background-color: #699c47;
+  color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,28 +1,41 @@
-import Contact from "./assets/components/contactpage-components/Contact";
-import Footer from "./assets/components/common-components/Footer";
-import Header from "./assets/components/homepage-components/Header";
-import HomeProductCategory from "./assets/components/homepage-components/HomeProductCategory";
-import Mainsection from "./assets/components/homepage-components/Mainsection";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
+// Common Components 
+
 import Navbar from "./assets/components/homepage-components/Navbar";
 import NavbarCommon from "./assets/components/common-components/NavbarCommon";
-import Organictab from "./assets/components/homepage-components/Organictab";
+import Header from "./assets/components/homepage-components/Header";
 import Subbar from "./assets/components/homepage-components/Subbar";
-import Tabs from "./assets/components/homepage-components/Tabs";
-import TrendingProduct from "./assets/components/homepage-components/TrendingProduct";
+import Footer from "./assets/components/common-components/Footer";
+
+// Pages import
+
+import Home from "./assets/pages/Home";
+import ContactPage from "./assets/pages/ContactPage"
+
 
 function App() {
+
+  const location = useLocation();
+
+  const currentPage = location.pathname === "/";
+
   return (
     <>
-      <Header />
-      <Subbar />
-      {/* <NavbarCommon /> */}
-      <Navbar />
-      <Mainsection />
-      <Tabs />
-      <Organictab />
-      <HomeProductCategory />
-      <TrendingProduct/>
-      {/* <Contact /> */}
+    {currentPage ? <Header/> : <Subbar/>}
+    {currentPage ? <Subbar/> : <Header/>}
+    {currentPage ? <Navbar/> : <NavbarCommon/>}
+
+
+    <Routes>
+
+      <Route path="/" element={<Home/>} />
+      <Route path="/contact" element={<ContactPage/>}/>
+
+    </Routes>
+
+
       <Footer />
     </>
   );

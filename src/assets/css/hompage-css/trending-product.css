@@ -89,10 +89,25 @@
 #card-btn{
     background-color: whitesmoke;
     color: black;
-    border: 0.2px solid black!important;
+    border: 0.2px solid rgba(0, 0, 0, 0.288)!important;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+}
+
+
+
+.hover-element{
+
+    display: none !important;
+}
+
+.trending-card-top:hover .hover-element{
+    display: flex !important;
+    align-items: end;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    transition: background-color 0.3s ease;
 }
