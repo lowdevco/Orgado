@@ -97,7 +97,7 @@ function TrendingProduct() {
     <div className="container my-5">
       <div className="trending-product row">
         <div className="col-3 trending-lt">
-          <p>Organic</p>
+          <span>Organic</span>
           <h2>Fresh Masala</h2>
         </div>
 

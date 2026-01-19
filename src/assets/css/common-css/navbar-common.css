@@ -80,20 +80,20 @@
   border-bottom: solid 1px rgb(235, 235, 235);
 }
 
-.nav-link-custom{
+.nav-link-custom {
   color: black;
   text-decoration: none;
 }
 
-.nav-link-custom:hover{
-  color:  #699c47 !important;
+.nav-link-custom:hover {
+  color: #699c47 !important;
   cursor: pointer;
 }
 
-#nav-badge span{
+#nav-badge span {
   position: absolute;
- top: 13px;
- margin-left: 22px;
+  top: 13px;
+  margin-left: 22px;
   background-color: #699c47;
   color: white;
   height: 25px;
@@ -116,12 +116,10 @@ nav {
   flex-wrap: nowrap;
 }
 
-
 .navbar-right-icons {
   display: flex;
   align-items: center;
 }
-
 
 @media (max-width: 576px) {
   .navbar-right-icons {

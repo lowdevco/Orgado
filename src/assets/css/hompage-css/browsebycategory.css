@@ -1,0 +1,53 @@
+.category-tab {
+  width: 310px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+}
+
+#category-tab-1 {
+  background-image: url(../../image/hompage-images/Product/categorytab-bg/category-thumb-01.webp);
+}
+
+#category-tab-2 {
+  background-image: url(../../image/hompage-images/Product/categorytab-bg/category-thumb-02.webp);
+}
+
+#category-tab-3 {
+  background-image: url(../../image/hompage-images/Product/categorytab-bg/category-thumb-03.webp);
+}
+
+#category-tab-4 {
+  background-image: url(../../image/hompage-images/Product/categorytab-bg/category-thumb-04.webp);
+}
+
+.category-list h4 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  padding: 0 0 0 12px;
+}
+
+.category-list a {
+  text-decoration: none;
+  color: #777;
+}
+
+.category-list li {
+  margin: 0 0 5px;
+  padding: 0 0 0 10px;
+}
+
+.category-tabs button {
+  color: white;
+  background-color: #699c47;
+  padding: 0 10px;
+  font-size: 16px;
+  margin-right: 20px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+}

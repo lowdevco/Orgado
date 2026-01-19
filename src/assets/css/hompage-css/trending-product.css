@@ -7,6 +7,23 @@
     border-radius: 10px;
     background-size: cover;
     background-position: center;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trending-lt span{
+
+    font-size: 25px !important;
+
+}
+
+.trending-lt h2{
+
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .card-inner-shell{

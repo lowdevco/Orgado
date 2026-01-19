@@ -11,7 +11,9 @@ function HomeProductCategory() {
             <a href="">Meat & Milk</a>
             <p>Premium quality meat & milk</p>
             <button className="btn product-btn">
-                <a href="" style={{fontSize:16}}>Shop Now</a>
+              <a href="" style={{ fontSize: 16 }}>
+                Shop Now
+              </a>
             </button>
           </div>
         </div>
@@ -22,7 +24,9 @@ function HomeProductCategory() {
             <a href="">Vegetable</a>
             <p>Premium quality vegetables</p>
             <button className=" btn product-btn">
-                <a href="" style={{fontSize:16}}>Shop Now</a>
+              <a href="" style={{ fontSize: 16 }}>
+                Shop Now
+              </a>
             </button>
           </div>
         </div>
@@ -33,7 +37,9 @@ function HomeProductCategory() {
             <a href="">Food and Fuits</a>
             <p>Premium quality Fresh produce</p>
             <button className="btn product-btn">
-                <a href="" style={{fontSize:16}}>Shop Now</a>
+              <a href="" style={{ fontSize: 16 }}>
+                Shop Now
+              </a>
             </button>
           </div>
         </div>

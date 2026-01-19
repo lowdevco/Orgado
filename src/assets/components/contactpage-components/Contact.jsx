@@ -4,8 +4,7 @@ import "../../css/contact-css/contact.css";
 import useContactForm from "../../Hooks/useContactForm";
 
 function Contact() {
-
-  const {formData,handleDataChange,handleDataSubmit} = useContactForm();
+  const { formData, handleDataChange, handleDataSubmit } = useContactForm();
 
   // function handleSubmit(o){
   //   o.preventDefault();
@@ -33,7 +32,6 @@ function Contact() {
         >
           {/* Left tab */}
           <div className="col-8 container" id="contact-lt">
-
             <form className="contact-form" onSubmit={handleDataSubmit}>
               <div className="contact-lt-text mb-4">
                 <h1 style={{ fontSize: 60, fontWeight: 700 }}>Get in Touch</h1>
@@ -90,7 +88,6 @@ function Contact() {
                 Submit Now
               </button>
             </form>
-
           </div>
 
           {/* Right tab */}

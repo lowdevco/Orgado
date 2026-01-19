@@ -1,7 +1,6 @@
 import React from "react";
 import "../../css/hompage-css/header.css";
 
-
 function Header() {
   return (
     <header className="app-header">

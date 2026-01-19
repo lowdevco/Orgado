@@ -7,7 +7,7 @@
   box-shadow: 0 10px 20px 0 rgba(8, 0, 42, 0.08);
 }
 
-.searchbar-input{
+.searchbar-input {
   border: none;
   outline: none;
   width: 200px;
@@ -32,47 +32,45 @@
   box-shadow: 0 10px 20px 0 rgba(8, 0, 42, 0.08);
 }
 
-#search-bar input{
+#search-bar input {
   width: 20rem;
   height: 2rem;
 }
 
-#search-bar button{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
+#search-bar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
-#navbar-id{
-    position: sticky;
-    top: 0;
-    z-index: 10000;
-    box-shadow: 0 0.2px 5px rgb(197, 197, 197);
-    background-color: white;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#navbar-id {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  box-shadow: 0 0.2px 5px rgb(197, 197, 197);
+  background-color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.nav-link-custom:hover{
+.nav-link-custom:hover {
   color: #699c47 !important;
   cursor: pointer;
 }
 
-
-nav{
+nav {
   position: sticky !important;
   width: 100% !important;
   z-index: 1000 !important;
 }
 
-.navbar-icon1 span{
+.navbar-icon1 span {
   position: absolute;
- top: 13px;
- margin-left: 22px;
+  top: 13px;
+  margin-left: 22px;
   background-color: #699c47;
   color: white;
   height: 25px;

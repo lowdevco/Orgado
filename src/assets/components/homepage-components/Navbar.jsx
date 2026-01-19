@@ -1,11 +1,10 @@
 import React from "react";
 import navbarlogo from "../../image/common-images/logo.webp";
 import "../../css/hompage-css/navbar.css";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-
     <nav className="navbar">
       <div className="container-fluid" id="navbar-id">
         <div className="container-fluid d-flex justify-content-between py-3 align-items-center navbar-container">
@@ -18,12 +17,24 @@ function Navbar() {
           <div className="d-flex justify-content-evenly gap-4 align-items-center">
             <div className="d-flex ">
               <h6>
-              <Link to="/" style={{textDecoration:"none",color:"black"}} className="nav-link-custom">Home</Link>
+                <Link
+                  to="/"
+                  style={{ textDecoration: "none", color: "black" }}
+                  className="nav-link-custom"
+                >
+                  Home
+                </Link>
               </h6>
             </div>
             <div className="d-flex">
               <h6>
-                <Link to="/shop"style={{textDecoration:"none",color:"black"}} className="nav-link-custom">Shop</Link>{" "}
+                <Link
+                  to="/shop"
+                  style={{ textDecoration: "none", color: "black" }}
+                  className="nav-link-custom"
+                >
+                  Shop
+                </Link>{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -41,7 +52,13 @@ function Navbar() {
             </div>
             <div className="d-flex">
               <h6>
-                <Link to="/page"style={{textDecoration:"none",color:"black"}} className="nav-link-custom">Pages</Link>{" "}
+                <Link
+                  to="/page"
+                  style={{ textDecoration: "none", color: "black" }}
+                  className="nav-link-custom"
+                >
+                  Pages
+                </Link>{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -59,17 +76,35 @@ function Navbar() {
             </div>
             <div>
               <h6>
-              <Link to="/blog"style={{textDecoration:"none",color:"black"}} className="nav-link-custom">Blog</Link>
+                <Link
+                  to="/blog"
+                  style={{ textDecoration: "none", color: "black" }}
+                  className="nav-link-custom"
+                >
+                  Blog
+                </Link>
               </h6>
             </div>
             <div>
               <h6>
-              <Link to="/contact"style={{textDecoration:"none",color:"black"}} className="nav-link-custom">Contact</Link>
+                <Link
+                  to="/contact"
+                  style={{ textDecoration: "none", color: "black" }}
+                  className="nav-link-custom"
+                >
+                  Contact
+                </Link>
               </h6>
             </div>
             <div>
               <h6>
-              <Link to="/order"style={{textDecoration:"none",color:"black"}} className="nav-link-custom">Track Order</Link>
+                <Link
+                  to="/order"
+                  style={{ textDecoration: "none", color: "black" }}
+                  className="nav-link-custom"
+                >
+                  Track Order
+                </Link>
               </h6>
             </div>
           </div>
@@ -79,7 +114,7 @@ function Navbar() {
               <div>
                 <input type="text" className="searchbar-input" />
               </div>
-              <div >
+              <div>
                 <button>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

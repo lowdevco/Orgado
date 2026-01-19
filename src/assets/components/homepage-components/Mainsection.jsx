@@ -14,12 +14,12 @@ function Mainsection() {
 
           <div className="moto-description">
             <p>
-              Discover organic, sustainable food from our organic farm and <br /> fresh
-              vegetable, and food Shop Now
+              Discover organic, sustainable food from our organic farm and{" "}
+              <br /> fresh vegetable, and food Shop Now
             </p>
             <div className="d-flex">
-            <button type="submit">Shop Now</button>
-            <img src={swirl} alt="bounce" className="bounce-img"/>
+              <button type="submit">Shop Now</button>
+              <img src={swirl} alt="bounce" className="bounce-img" />
             </div>
           </div>
         </div>

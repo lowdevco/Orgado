@@ -1,86 +1,87 @@
-#main-section{
-    height: 82.2vh;
-    background-color: rgb(235, 235, 235);
-    background-image: url(../../image/hompage-images/homepage.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+#main-section {
+  height: 82.2vh;
+  background-color: rgb(235, 235, 235);
+  background-image: url(../../image/hompage-images/homepage.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.moto h1{
-    padding-top: 15vh;
-    font-size: 8.5rem;
-    font-weight: bolder;
-    line-height: 0.2;
-    user-select: #699c47;
-    z-index: -1;
+.moto h1 {
+  padding-top: 15vh;
+  font-size: 8.5rem;
+  font-weight: bolder;
+  line-height: 0.2;
+  user-select: #699c47;
+  z-index: -1;
 }
 
-.moto-description p{
-    font-size: 1rem;
-    padding-top: 8vh;
-    padding-bottom: 3vh;
-    font-weight: 300;
-    color: rgb(68, 67, 67);
+.moto-description p {
+  font-size: 1rem;
+  padding-top: 8vh;
+  padding-bottom: 3vh;
+  font-weight: 300;
+  color: rgb(68, 67, 67);
 }
 
-.moto-description button{
-    background-color:#699c47 !important;
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: 700;
-    height: 4rem;
-    margin-top: 1rem;
+.moto-description button {
+  background-color: #699c47 !important;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  height: 4rem;
+  margin-top: 1rem;
 }
 
-#moto-container{
-    padding-top: 4vh;
+#moto-container {
+  padding-top: 4vh;
 }
 
-.moto h1::selection{
-    background-color: #699c47;
-    color: white;
+.moto h1::selection {
+  background-color: #699c47;
+  color: white;
 }
 
-.moto-description p::selection{
-    background-color: #699c47;
-    color: white;
+.moto-description p::selection {
+  background-color: #699c47;
+  color: white;
 }
 
-.moto-description button::selection{
-    background-color: #699c47;
-    color: white;
+.moto-description button::selection {
+  background-color: #699c47;
+  color: white;
 }
 
-.moto-description button:hover{
-    background-color: white !important;
-    color: #699c47;
-    border: #699c47 solid 2px;
-    transition: background-color 0.3s ease;
+.moto-description button:hover {
+  background-color: white !important;
+  color: #699c47;
+  border: #699c47 solid 2px;
+  transition: background-color 0.3s ease;
 }
 
-.bounce-img{
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    cursor: pointer;
-    user-select: none;
+.bounce-img {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  user-select: none;
 }
 
 .bounce-img {
   animation: slide 2.5s infinite ease-in-out;
 }
 
-img{
-    user-select: none;
-    -webkit-user-drag: none;
+img {
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 @keyframes slide {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0);
   }
 
