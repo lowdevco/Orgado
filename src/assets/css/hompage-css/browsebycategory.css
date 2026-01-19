@@ -1,13 +1,13 @@
 .category-tab {
-  width: 310px;
+  width: 310px !important;
   height: 350px;
   border-radius: 10px;
   background-color: white;
   padding: 20px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-clip: border-box;
 }
+
 
 #category-tab-1 {
   background-image: url(../../image/hompage-images/Product/categorytab-bg/category-thumb-01.webp);

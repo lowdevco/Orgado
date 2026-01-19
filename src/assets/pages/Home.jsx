@@ -11,10 +11,10 @@ function Home() {
     <div>
       <Mainsection />
       <Tabs />
-      <Organictab />
       <HomeProductCategory />
       <TrendingProduct />
       <BrowseByCategory />
+      <Organictab />
     </div>
   );
 }

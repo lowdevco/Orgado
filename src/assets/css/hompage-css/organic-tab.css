@@ -1,0 +1,74 @@
+.organic-cerosal{
+    width: 306px;
+    height: 270px;
+}
+
+.organic-slide{
+    height: 270px;
+    width: 100%;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+}
+
+.organic-box{
+    width: 306px;
+    height: 427px;
+    background-color: aqua;
+}
+
+.product-list{
+    height: auto;
+    padding: 10px;
+}
+
+.product-card{
+    height: 300px;
+    width: 237px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    
+}
+
+.product-card-top{
+    height: 60%;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-card-bottom{
+    height: 40%;
+    background-color:white;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+
+#card-btn{
+    background-color: whitesmoke;
+    color: black;
+    border: 0.2px solid rgba(0, 0, 0, 0.288)!important;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.hover-element{
+
+    display: none !important;
+}
+
+.product-card-top:hover .hover-element{
+    display: flex !important;
+    align-items: end;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.product-slider{
+    width: 306px;
+    height: 270px;
+}

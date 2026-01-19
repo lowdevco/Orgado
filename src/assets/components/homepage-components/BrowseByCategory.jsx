@@ -16,8 +16,8 @@ function BrowseByCategory() {
             </div>
           </div>
         </div>
-        <div className="row gap-3">
-          <div className="col-3 category-tab" id="category-tab-1">
+        <div className="row gap-4 ">
+          <div className="col-lg-3 col-md-6 mb-4 category-tab" id="category-tab-1">
             <div className="category-list">
               <h4>Fruits & Vegitable</h4>
               <ul>
@@ -42,7 +42,7 @@ function BrowseByCategory() {
               </ul>
             </div>
           </div>
-          <div className="col-3 category-tab" id="category-tab-2">
+          <div className="col-lg-3 col-md-6 mb-4 category-tab" id="category-tab-2">
             <div className="category-list">
               <h4>Dairy Products</h4>
               <ul>
@@ -67,7 +67,7 @@ function BrowseByCategory() {
               </ul>
             </div>
           </div>
-          <div className="col-3 category-tab" id="category-tab-3">
+          <div className="col-lg-3 col-md-6 mb-4 category-tab" id="category-tab-3">
             <div className="category-list">
               <h4>Grocery & Staple</h4>
               <ul>
@@ -92,7 +92,7 @@ function BrowseByCategory() {
               </ul>
             </div>
           </div>
-          <div className="col-3 category-tab" id="category-tab-4">
+          <div className="col-lg-3 col-md-6 mb-4 category-tab" id="category-tab-4">
             <div className="category-list">
               <h4>Miscellaneous</h4>
               <ul>
