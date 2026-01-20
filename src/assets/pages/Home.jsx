@@ -5,6 +5,7 @@ import Organictab from "../components/homepage-components/Organictab";
 import HomeProductCategory from "../components/homepage-components/HomeProductCategory";
 import TrendingProduct from "../components/homepage-components/TrendingProduct";
 import BrowseByCategory from "../components/homepage-components/BrowseByCategory";
+import ReviewSection from "../components/homepage-components/ReviewSection";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <TrendingProduct />
       <BrowseByCategory />
       <Organictab />
+      <ReviewSection/>
     </div>
   );
 }
