@@ -1,0 +1,70 @@
+.review-tab {
+  height: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+#review-tab-3 {
+  width: 500px;
+  background-image: url(../../image/hompage-images/Product/Banner/product-banner-05.jpg);
+}
+
+#review-tab-1 {
+  padding: 40px;
+}
+
+#review-tab-2 {
+  background-image: url(../../image/hompage-images/Product/Banner/product-banner-04.jpg);
+}
+
+.review-tab a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.review-tab a:hover {
+  color: #699c47;
+  transition: color 0.3s;
+}
+
+.review-tab h6 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.review-tab button {
+  padding: 0, 10px;
+  color: black;
+  border: 1px solid #699c47 !important;
+  border-radius: 20px;
+  height: 44px;
+  width: 120px;
+  background-color: hsl(53, 21%, 85%, 0.3);
+}
+
+.review-cerosal img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.review-cerosal h3 {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+#review-area {
+  width: 100%;
+  height: auto;
+  color: #777;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
