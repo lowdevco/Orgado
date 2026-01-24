@@ -13,6 +13,8 @@ import Footer from "./assets/components/common-components/Footer";
 
 import Home from "./assets/pages/Home";
 import ContactPage from "./assets/pages/ContactPage";
+import SignupPage from "./assets/components/loginpage-components/SignupPage";
+import LoginPage from "./assets/components/loginpage-components/LoginPage";
 
 function App() {
   const location = useLocation();
@@ -28,6 +30,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/signup" element={<SignupPage/>}/>
+        <Route path="/login" element={<LoginPage/>}/>
       </Routes>
 
       <Footer />

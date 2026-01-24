@@ -1,0 +1,85 @@
+.signup-form-container{
+    height: 50vh;
+}
+
+#signup-form{
+    margin-top: 150px;
+}
+
+#signup-form input{
+    width: 100%;
+    line-height: 60px;
+    border: 1px solid #d8d7d7;
+    background: transparent;
+    font-size: 15px;
+    outline: none;
+    border-radius: 4px;
+    padding: 0 20px;
+    width: 374px;
+    margin-bottom: 20px;
+}
+
+#signup-form option{
+    width: 100%;
+    line-height: 60px;
+    border: 1px solid #d8d7d7;
+    color: #777;
+    font-size: 15px;
+    outline: none;
+    border-radius: 4px;
+    padding: 0 20px;
+    width: 374px;
+    margin-bottom: 20px;
+}
+
+#signup-form select{
+    width: 100%;
+    line-height: 60px;
+    height: 60px;
+    border: 1px solid #d8d7d7;
+    background: transparent;
+    font-size: 15px;
+    outline: none;
+    border-radius: 4px;
+    color: #777;
+    padding: 0 20px;
+    width: 374px;
+    margin-bottom: 20px;
+}
+
+#signup-form button{
+    width: 100%;
+    display: inline-flex;
+    height: 60px;
+    background-color: #699c47;
+    align-items: center;
+    width: 775px;
+    padding: 0 45px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #527937;
+    justify-content: space-evenly;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: all .3s ease-out 0s;
+    justify-content: center;
+}
+
+#signup-form a{
+    color: black ;
+    font-weight: 600;
+}
+
+#signup-form button:hover{
+    background-color: transparent;
+    color: #699c47;
+}
+
+#signup-checkbox input{
+    width: 20px;
+}
+
+#signup-checkbox{
+    margin-right: 500px;
+}

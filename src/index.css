@@ -12,3 +12,8 @@
 *a {
   text-decoration: none !important;
 }
+
+Link{
+  text-decoration: none !important;
+  color: black !important;
+}
