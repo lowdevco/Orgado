@@ -68,3 +68,90 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
+.review-tab-bottom {
+  width: 315px !important;
+  background-color: White;
+  border-radius: 10px;
+  height: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+#review-tab-bottom-1 {
+  padding: 50px;
+}
+
+#review-tab-bottom-4 {
+  background-image: url(../../image/hompage-images/Product/Banner/flash-banner-02.webp);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  padding: 30px;
+}
+
+.download-tab {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+}
+
+#download-tab-1 {
+  background-image: url(../../image/hompage-images/app-store-02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#download-tab-2 {
+  background-image: url(../../image/hompage-images/app-store-01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.review-m {
+  padding: 5px !important;
+}
+
+.review-m-content {
+  background-color: #eeeeee;
+  height: 70px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.m-img {
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25%;
+}
+
+#m-img-lt-1 {
+  background-image: url(../../image/common-images/orgado-product/prod1.png);
+}
+#m-img-lt-2 {
+  background-image: url(../../image/common-images/orgado-product/prod3.png);
+}
+#m-img-lt-3 {
+  background-image: url(../../image/common-images/orgado-product/prod4.png);
+}
+#m-img-rt-1 {
+  background-image: url(../../image/common-images/orgado-product/prod8.png);
+}
+#m-img-rt-2 {
+  background-image: url(../../image/common-images/orgado-product/prod2.png);
+}
+#m-img-rt-3 {
+  background-image: url(../../image/common-images/orgado-product/prod10.png);
+}
+
+.review-m h6 {
+  font-weight: 800 !important;
+}

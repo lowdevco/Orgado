@@ -6,6 +6,7 @@ import HomeProductCategory from "../components/homepage-components/HomeProductCa
 import TrendingProduct from "../components/homepage-components/TrendingProduct";
 import BrowseByCategory from "../components/homepage-components/BrowseByCategory";
 import ReviewSection from "../components/homepage-components/ReviewSection";
+import NewsSection from "../components/homepage-components/NewsSection";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <BrowseByCategory />
       <Organictab />
       <ReviewSection/>
+      <NewsSection/>
     </div>
   );
 }

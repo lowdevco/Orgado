@@ -1,0 +1,18 @@
+#brand-container{
+    height: 300px;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 80px 20px;
+}
+
+#brand{
+    width: 80%;
+    height: 150px;
+    margin-left: 200px;
+    padding: 10px;
+}
+
+#brand img{
+    height: 120px;
+    width: 120px;
+}
