@@ -1,0 +1,40 @@
+.track-order{
+    height: 500px;
+}
+
+.track-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.track-div input{
+    width: 400px;
+    height: 60px;
+    padding: 0 20px;
+    border: #777777 1px solid;
+    border-radius: 5px;
+}
+
+.track-div input:focus{
+    border: #699c47 2px solid;
+}
+
+
+.track-div button{
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    background-color: #699c47;
+    color: white;
+    font-weight: 600;
+}
+
+.track-div button:hover{
+
+    border: #699c47 1px solid;
+    background-color: transparent;
+    color: #699c47;
+}

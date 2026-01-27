@@ -13,6 +13,8 @@ import Footer from "./assets/components/common-components/Footer";
 
 import Home from "./assets/pages/Home";
 import ContactPage from "./assets/pages/ContactPage";
+import BlogPage from "./assets/pages/BlogPage"
+import TrackOrder from "./assets/pages/TrackOrder";
 import SignupPage from "./assets/components/loginpage-components/SignupPage";
 import LoginPage from "./assets/components/loginpage-components/LoginPage";
 
@@ -30,6 +32,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/blog" element={<BlogPage/>} />
+        <Route path="/track" element={<TrackOrder/>} />
         <Route path="/signup" element={<SignupPage/>}/>
         <Route path="/login" element={<LoginPage/>}/>
       </Routes>
