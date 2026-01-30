@@ -20,8 +20,9 @@
   margin: auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .subbar {
     display: none;
   }
 }
+

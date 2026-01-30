@@ -89,3 +89,35 @@ img {
     transform: translateX(0.5rem);
   }
 }
+
+
+@media (max-width:1440px) {
+  .moto h1{
+    font-size: 5rem;
+  }
+  .moto-description button{
+    margin-top: 10px;
+  }
+
+  #main-section{
+    height: auto;
+  }
+}
+
+@media (max-width:425px) {
+  .moto h1{
+    font-size: 4rem;
+  }
+  .moto-description p{
+    font-size: 12px;
+  }
+  .moto-description button{
+    height: 3.5rem;
+  }
+}
+
+@media (max-width:375px) {
+    .moto h1{
+    font-size: 3rem;
+  }
+}

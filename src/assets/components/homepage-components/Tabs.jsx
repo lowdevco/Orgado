@@ -3,9 +3,11 @@ import "../../css/hompage-css/tabs.css";
 
 function Tabs() {
   return (
-    <div className="container-fluid" id="ttab">
-      <div className="container d-flex justify-content-evenly py-3" id="tabs">
-        <div className="d-flex gap-3">
+    <div className="container-fluid">
+      <div className="container  py-3">
+        <div className="row">
+        <div className=" col-xl-3 col-lg-3 col-md-6 col-12">
+          <div className="d-flex gap-3">
           <div
             id="tab-icon"
             className="d-flex align-items-center justify-content-center"
@@ -25,11 +27,11 @@ function Tabs() {
             <h6>Free Shipping</h6>
             <p>On All Order Over $599</p>
           </div>
+          </div>
         </div>
-        <div>
-          <h2>|</h2>
-        </div>
-        <div className="d-flex gap-3">
+
+        <div className=" col-xl-3 col-lg-3 col-md-6 col-12">
+          <div className="d-flex gap-3">
           <div
             id="tab-icon"
             className="d-flex align-items-center justify-content-center"
@@ -50,11 +52,11 @@ function Tabs() {
             <h6>Easy Returns</h6>
             <p>30Day Return Policy</p>
           </div>
+          </div>
         </div>
-        <div>
-          <h2>|</h2>
-        </div>
-        <div className="d-flex gap-3">
+
+        <div className=" col-xl-3 col-lg-3 col-md-6 col-12">
+          <div className="d-flex gap-3">
           <div
             id="tab-icon"
             className="d-flex align-items-center justify-content-center"
@@ -75,11 +77,11 @@ function Tabs() {
             <h6>Secure Payment</h6>
             <p>100% Secure Gurantee</p>
           </div>
+          </div>
         </div>
-        <div>
-          <h2>|</h2>
-        </div>
-        <div className="d-flex gap-3">
+
+        <div className=" col-xl-3 col-lg-3 col-md-6 col-12">
+          <div className="d-flex gap-3">
           <div
             id="tab-icon"
             className="d-flex align-items-center justify-content-center"
@@ -99,6 +101,8 @@ function Tabs() {
             <h6>Special Support</h6>
             <p>24/7 Dedicated Support</p>
           </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>

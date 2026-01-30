@@ -92,20 +92,28 @@ function Organictab() {
           <div className="col-1"></div>
           <div className=" organic-nav-link col-5 d-flex justify-content-between align-items-center">
             <div>
-              <Link><h6>View All</h6></Link>
-            </div>
-            <div>
-              <Link><h6>New Arrival</h6></Link>
-            </div>
-            <div>
-              <Link><h6>Best Sale</h6></Link>
-            </div>
-            <div>
-              <Link><h6>Trending</h6></Link>
+              <Link>
+                <h6>View All</h6>
+              </Link>
             </div>
             <div>
               <Link>
-              <button>View All</button>
+                <h6>New Arrival</h6>
+              </Link>
+            </div>
+            <div>
+              <Link>
+                <h6>Best Sale</h6>
+              </Link>
+            </div>
+            <div>
+              <Link>
+                <h6>Trending</h6>
+              </Link>
+            </div>
+            <div>
+              <Link>
+                <button>View All</button>
               </Link>
             </div>
           </div>
@@ -136,13 +144,15 @@ function Organictab() {
                 <div>
                   <p>Freshly</p>
                   <h3>Maitta Potato</h3>
-                  <p>From <h3>$9.00</h3></p>
+                  <p>
+                    From <h3>$9.00</h3>
+                  </p>
                 </div>
                 <br />
                 <div className="d-flex align-items-end ">
                   <div className="organic-crl">
-                    <h5 style={{color:"white",fontWeight:"bold"}}>Hot</h5>
-                    <h5 style={{color:"white"}}>item</h5>
+                    <h5 style={{ color: "white", fontWeight: "bold" }}>Hot</h5>
+                    <h5 style={{ color: "white" }}>item</h5>
                   </div>
                 </div>
               </div>

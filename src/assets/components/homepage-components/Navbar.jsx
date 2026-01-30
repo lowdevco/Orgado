@@ -14,7 +14,10 @@ function Navbar() {
             </a>
           </div>
 
-          <div className="d-flex justify-content-evenly gap-4 align-items-center">
+          <div
+            className="d-flex justify-content-evenly gap-4 align-items-center"
+            id="navbar-links"
+          >
             <div className="d-flex ">
               <h6>
                 <Link
@@ -34,20 +37,7 @@ function Navbar() {
                   className="nav-link-custom"
                 >
                   Shop
-                </Link>{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-chevron-down"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                  />
-                </svg>
+                </Link>
               </h6>
             </div>
             <div className="d-flex">
@@ -58,20 +48,7 @@ function Navbar() {
                   className="nav-link-custom"
                 >
                   Pages
-                </Link>{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-chevron-down"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                  />
-                </svg>
+                </Link>
               </h6>
             </div>
             <div>
@@ -160,7 +137,7 @@ function Navbar() {
               <span className="navbar-badge">0</span>
             </div>
 
-            <div className="navbar-icon1">
+            <div className="navbar-icon1" id="navbar-icon-login">
               <Link to="/login" style={{ color: "black" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -171,6 +148,23 @@ function Navbar() {
                   viewBox="0 0 16 16"
                 >
                   <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                </svg>
+              </Link>
+            </div>
+            <div className="navbar-hamburg">
+              <Link>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                  />
                 </svg>
               </Link>
             </div>

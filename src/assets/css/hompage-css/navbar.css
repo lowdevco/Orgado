@@ -19,6 +19,17 @@
   background-color: transparent;
 }
 
+.navbar-hamburg svg{
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  color: black;
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar-icon1 {
   cursor: pointer;
   padding: 5px;
@@ -80,4 +91,58 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width:1024px) {
+  .navbar-container{
+    max-width: 1024px;
+  }
+  .navbar-container a{
+    font-size: 12px;
+  }
+  .navbar-container img{
+    width: 150px;
+    height: 50px;
+  }
+  #search-bar input{
+    width: 200px;
+  }
+}
+
+@media (max-width:768px){
+  #navbar-links div{
+    display: none;
+  }
+
+  #navbar-links a{
+    display: none;
+  }
+
+  #search-bar{
+    display: none;
+  }
+  .navbar-hamburg svg{
+    display: block;
+  }
+}
+
+@media (max-width:425px) {
+  .navbar-icon1{
+    height: 28px;
+    width: 28px;
+  }
+  .navbar-hamburg{
+    height: 28px;
+    width: 28px;
+  }
+    .navbar-container img{
+    width: 100px;
+    height: 40px;
+  }
+}
+
+@media (max-width:320px) {
+    #navbar-icon-login{
+    display: none;
+  }
 }

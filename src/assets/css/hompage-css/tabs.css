@@ -14,16 +14,3 @@
   background-color: #80b500;
   box-shadow: 0 10px 20px 0 rgba(8, 0, 42, 0.08);
 }
-
-#ttab h2 {
-  font-size: 3rem;
-  font-weight: 100;
-  color: rgb(170, 170, 170);
-}
-
-#ttab {
-  height: 15vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

@@ -12,6 +12,7 @@ const trendingData = productDatas.slice(0,10);
 
 
 function TrendingProduct() {
+
   const settings = {
     dots: false,
     infinite: true,
@@ -19,6 +20,29 @@ function TrendingProduct() {
     slidesToShow: 3,
     slidesToScroll: 2,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ] 
   };
 
   const sliderRef = useRef(null);
@@ -26,12 +50,12 @@ function TrendingProduct() {
   return (
     <div className="container my-5">
       <div className="trending-product row">
-        <div className="col-3 trending-lt">
+        <div className="col-xl-3 col-lg-3 col-md-4 col-12 trending-lt">
           <span>Organic</span>
           <h2>Fresh Masala</h2>
         </div>
 
-        <div className="col-9 trending-rt">
+        <div className="col-xl-9 col-lg-9 col-md-8 col-12 trending-rt">
           <div className="d-flex align-items-center justify-content-between mb-3">
             <div>
               <h1>You May Missed</h1>
@@ -48,7 +72,7 @@ function TrendingProduct() {
             <div>
               <h6>Trending</h6>
             </div>
-            <div className="d-flex align-items-center justify-content-between gap-2">
+            <div className="d-flex align-items-center justify-content-between gap-2 cerosal-btns">
               <button
                 className="cerousel-btn"
                 onClick={() => sliderRef.current.slickPrev()}
@@ -64,7 +88,7 @@ function TrendingProduct() {
             </div>
           </div>
 
-          <Slider ref={sliderRef} {...settings}>
+          <Slider ref={sliderRef} {...settings} className="trending-slider">
             {trendingData.map((product) => (
               <div key={product.id}>
                 <div className="trending-card">
