@@ -4,15 +4,13 @@ import Slider from "react-slick";
 import "../../css/hompage-css/trending-product.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import productDatas from "../../../data/productDatas"
+import productDatas from "../../../data/productDatas";
 
-// Products 
+// Products
 
-const trendingData = productDatas.slice(0,10);
-
+const trendingData = productDatas.slice(0, 10);
 
 function TrendingProduct() {
-
   const settings = {
     dots: false,
     infinite: true,
@@ -26,23 +24,23 @@ function TrendingProduct() {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2,
-        }
+        },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 375,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-        }
-      }
-    ] 
+        },
+      },
+    ],
   };
 
   const sliderRef = useRef(null);

@@ -1,211 +1,200 @@
+.trending-lt {
+  height: 478px;
+  width: 100%;
+  background-image: url(../../image/hompage-images/Product/Banner/trendingbnr-1.jpg);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.trending-lt{
-    height: 478px;
-    width: 100%;
-    background-image: url(../../image/hompage-images/Product/Banner/trendingbnr-1.jpg);
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 50px;
+.trending-lt span {
+  font-size: 25px !important;
+}
+
+.trending-lt h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.card-inner-shell {
+  height: 420px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.trending-card {
+  height: 400px;
+  width: 310px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #e2e2e2;
+}
+
+.trending-card-top {
+  height: 60%;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.trending-card-bottom {
+  height: 40%;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+
+.cerousel-btn {
+  background-color: #cfcfcf1f;
+  color: rgb(201, 177, 201);
+  border: 1px solid #e2e2e2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.cerousel-btn:hover {
+  background-color: #699c47;
+  transition: color 0.3s;
+  color: white;
+}
+
+.prod-name {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+  margin: 10px 0 5px 0;
+  text-decoration: none;
+  color: black;
+}
+
+.prod-name a {
+  text-decoration: none;
+  color: black;
+}
+
+.prod-name a:hover {
+  color: #699c47;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.prod-price {
+  font-size: 18px;
+  font-weight: 500;
+  font-weight: 700;
+  color: #699c47;
+}
+
+#card-btn {
+  background-color: whitesmoke;
+  color: black;
+  border: 0.2px solid rgba(0, 0, 0, 0.288) !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.hover-element {
+  display: none !important;
+}
+
+.trending-card-top:hover .hover-element {
+  display: flex !important;
+  align-items: end;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .trending-card {
+    width: 225px;
+    height: 350px;
+  }
+
+  .trending-slider {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.trending-lt span{
-
-    font-size: 25px !important;
-
-}
-
-.trending-lt h2{
-
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.card-inner-shell{
+    gap: 20px;
+  }
+  .trending-lt {
     height: 420px;
-    width: 100%;
-    border-radius: 10px;
-    padding: 10px;
+  }
 }
 
-.trending-card{
-    height: 400px;
-    width: 310px;
-    border-radius: 10px;
-    background-color: white;
-    border: 1px solid #e2e2e2;
-    
-}
-
-.trending-card-top{
-    height: 60%;
-    background-color: white;
-    border-radius: 10px 10px 0 0;
-}
-
-.trending-card-bottom{
-    height: 40%;
-    background-color:white;
-    border-radius: 0 0 10px 10px;
-    padding: 10px;
-}
-
-.cerousel-btn{
-    background-color: #cfcfcf1f;
-    color: rgb(201, 177, 201);
-    border: 1px solid #e2e2e2;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-}
-
-.cerousel-btn:hover{
-    background-color: #699c47;
-    transition: color 0.3s;
-    color: white;
-}
-
-.prod-name{
-    font-size: 20px;
-    font-weight: 600;
-    padding-top: 20px;
-    margin: 10px 0 5px 0;
-    text-decoration: none;
-    color: black;
-}
-
-.prod-name a{
-    text-decoration: none;
-    color: black;
-}
-
-.prod-name a:hover{
-    color: #699c47;
-    transition: color 0.3s;
-    text-decoration: none;
-}    
-
-.prod-price{
-    font-size: 18px;
-    font-weight: 500;
-    font-weight: 700;
-    color: #699c47;
-}
-
-#card-btn{
-    background-color: whitesmoke;
-    color: black;
-    border: 0.2px solid rgba(0, 0, 0, 0.288)!important;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
+@media (max-width: 768px) {
+  .trending-card {
+    width: 225px;
+    height: 345px;
+  }
+  .trending-rt h6 {
     font-size: 16px;
+  }
+  .trending-rt h1 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .cerosal-btns {
+    padding: 5px;
+  }
 }
 
-
-
-.hover-element{
-
-    display: none !important;
+@media (max-width: 425px) {
+  .trending-lt {
+    height: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  .trending-card {
+    width: 180px;
+    height: 280px;
+  }
+  .trending-card-bottom {
+    padding: 5px;
+  }
 }
 
-.trending-card-top:hover .hover-element{
-    display: flex !important;
-    align-items: end;
-    justify-content: center;
-    border-radius: 10px 10px 0 0;
-    transition: background-color 0.3s ease;
+@media (max-width: 375px) {
+  .trending-card {
+    width: 300px;
+    margin-left: 20px;
+  }
+  .trending-rt h6 {
+    font-size: 12px;
+  }
+  .trending-rt h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
 
-@media (max-width:1024px) {
-    .trending-card{
-        width: 225px;
-        height: 350px;
-    }
-
-    .trending-slider{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-    .trending-lt{
-        height: 420px;
-    }
-}
-
-@media (max-width:768px) {
-        .trending-card{
-        width: 225px;
-        height: 345px;
-    }
-    .trending-rt h6{
-        font-size: 16px;
-        
-    }
-    .trending-rt h1{
-        font-size: 22px;
-        font-weight: bold;
-    }
-    .cerosal-btns{
-        padding: 5px;
-    }
-}
-
-@media (max-width:425px) {
-    .trending-lt{
-        height: 250px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-bottom: 20px;
-        width: 300px;
-    }
-    .trending-card{
-        width: 180px;
-        height: 280px;
-    }
-    .trending-card-bottom{
-        padding: 5px;
-    }
-}
-
-@media (max-width:375px) {
-    .trending-card{
-        width: 300px;
-        margin-left: 20px;
-    }
-    .trending-rt h6{
-        font-size: 12px;
-        
-    }
-    .trending-rt h1{
-        font-size: 20px;
-        font-weight: bold;
-    }
-}
-
-@media (max-width:320px) {
-    .trending-card{
-        width: 260px;
-        height: 250px;
-    }
-    .trending-rt h6{
-        font-size: 10px;
-        
-    }
-    .trending-rt h1{
-        font-size: 18px;
-        font-weight: bold;
-    }
+@media (max-width: 320px) {
+  .trending-card {
+    width: 260px;
+    height: 250px;
+  }
+  .trending-rt h6 {
+    font-size: 10px;
+  }
+  .trending-rt h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
