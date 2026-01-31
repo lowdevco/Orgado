@@ -23,8 +23,8 @@ function ReviewSection() {
 
   return (
     <div className="container my-5">
-      <div className="row gap-4">
-        <div className="col-3 review-tab" id="review-tab-1">
+      <div className="row gap-3">
+        <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 review-tab" id="review-tab-1">
           <div className="review-cerosal text-center">
             <Slider {...settings}>
               {reviewDatas.map((review) => (
@@ -47,7 +47,7 @@ function ReviewSection() {
             </Slider>
           </div>
         </div>
-        <div className="col-4 review-tab" id="review-tab-2">
+        <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 review-tab" id="review-tab-2">
           <div>
             <h6>Orgainic</h6>
             <a href="">Meat & Milk</a>
@@ -59,7 +59,7 @@ function ReviewSection() {
             </button>
           </div>
         </div>
-        <div className="col-4 review-tab" id="review-tab-3">
+        <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 review-tab" id="review-tab-3">
           <div>
             <h6>Orgainic</h6>
             <a href="">Vegetable</a>
@@ -76,8 +76,8 @@ function ReviewSection() {
       <br />
       <br />
 
-      <div className="row my-1 gap-3">
-        <div className="col-3 review-tab-bottom" id="review-tab-bottom-1">
+      <div className="row my-1 gap-3 review-bottom-container">
+        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12  review-tab-bottom" id="review-tab-bottom-1">
           <div className="text-center">
             <h5>Download the App</h5>
             <p>Make your life easier</p>
@@ -87,7 +87,7 @@ function ReviewSection() {
             <div className="download-tab" id="download-tab-2"></div>
           </div>
         </div>
-        <div className="col-3 review-tab-bottom" id="review-tab-bottom-2">
+        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 review-tab-bottom" id="review-tab-bottom-2">
           <div className="review-m">
             <div className="d-flex justify-content-between align-items-center">
               <h3>Top Rated</h3>
@@ -119,7 +119,7 @@ function ReviewSection() {
           </div>
         </div>
 
-        <div className="col-3 review-tab-bottom" id="review-tab-bottom-3">
+        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 review-tab-bottom" id="review-tab-bottom-3">
           <div className="review-m">
             <div className="d-flex justify-content-between align-items-center">
               <h3>Popular</h3>
@@ -151,7 +151,7 @@ function ReviewSection() {
           </div>
         </div>
 
-        <div className="col-3 review-tab-bottom" id="review-tab-bottom-4">
+        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12  review-tab-bottom" id="review-tab-bottom-4">
           <h6>Freshly</h6>
           <h4 style={{ fontWeight: "750" }}>Maitta Potato</h4>
           <div>

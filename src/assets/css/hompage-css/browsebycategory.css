@@ -8,7 +8,6 @@
   background-size: cover;
 }
 
-
 #category-tab-1 {
   background-image: url(../../image/hompage-images/Product/categorytab-bg/category-thumb-01.webp);
 }
@@ -50,4 +49,39 @@
   height: 40px;
   border-radius: 20px;
   border: none;
+}
+
+@media (max-width: 1024px) {
+  .category-tab {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-tab {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .category-tab {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .category-tab {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .category-tab {
+    margin-left: 5px;
+    padding: 20px;
+  }
+
+  .category-tabs button {
+    padding: 10px;
+  }
 }

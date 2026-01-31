@@ -16,9 +16,9 @@ function Home() {
       <HomeProductCategory />
       <TrendingProduct />
       <BrowseByCategory />
-      {/* <Organictab />
+      <Organictab />
       <ReviewSection/>
-      <NewsSection/> */}
+      <NewsSection/>
     </div>
   );
 }

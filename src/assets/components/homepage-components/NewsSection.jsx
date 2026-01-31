@@ -66,7 +66,7 @@ function NewsSection() {
           <div className="row news-container gap-2">
             {/* Card 1  */}
 
-            <div className="col-4 news-card" id="news-card-1">
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 news-card" id="news-card-1">
               <div className="news-img" id="news-img-1">
                 <p style={{ color: "transparent" }}>1</p>
               </div>
@@ -127,7 +127,7 @@ function NewsSection() {
 
             {/* Card  2*/}
 
-            <div className="col-4 news-card" id="news-card-2">
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12  news-card" id="news-card-2">
               <div className="news-img" id="news-img-2">
                 <p style={{ color: "transparent" }}>1</p>
               </div>
@@ -186,7 +186,7 @@ function NewsSection() {
 
             {/* Card 3  */}
 
-            <div className="col-4 news-card" id="news-card-3">
+            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12  news-card" id="news-card-3">
               <div className="news-img" id="news-img-3">
                 <p style={{ color: "transparent" }}>1</p>
               </div>

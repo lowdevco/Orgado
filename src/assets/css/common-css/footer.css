@@ -51,3 +51,9 @@
 .footer-bottom p a:hover {
   color: #699c47;
 }
+
+@media (max-width:768px) {
+  #footer-links{
+    justify-content: start;
+  }
+}

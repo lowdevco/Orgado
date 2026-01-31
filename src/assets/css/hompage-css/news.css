@@ -72,3 +72,34 @@
   text-decoration: none;
   color: black;
 }
+
+@media (max-width:1024px) {
+  #brand{
+    margin-left: 120px;
+  }
+  #news-card-1,#news-card-2{
+    margin-left: 40px;
+  }
+  #news-card-3{
+    margin-left: 250px;
+  }
+}
+
+@media (max-width:768px) {
+  #brand{
+    margin-left: 70px;
+  }
+  #brand-container{
+    padding: 60px 20px;
+    display: none;
+  }
+  #news-card-1,#news-card-2,#news-card-3{
+    margin-left: 145px ;
+  }
+}
+
+@media (max-width:425px) {
+  #news-card-1,#news-card-2,#news-card-3{
+    margin-left: 0px;
+  }
+}

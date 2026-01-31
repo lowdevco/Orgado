@@ -70,7 +70,7 @@ function Organictab() {
                 </svg>
                 <h3>Flash Sale!</h3>
               </div>
-              <div className="col-4 d-flex align-items-center justify-content-between gap-2">
+              <div className="col-4 d-flex align-items-center justify-content-between gap-2 cerousel-btns">
                 <button
                   className="cerousel-btn"
                   onClick={() => sliderRef.current.slickPrev()}
@@ -86,12 +86,12 @@ function Organictab() {
               </div>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-3" id="missed">
             <h3>You May Missed</h3>
           </div>
           <div className="col-1"></div>
           <div className=" organic-nav-link col-5 d-flex justify-content-between align-items-center">
-            <div>
+            <div id="remove">
               <Link>
                 <h6>View All</h6>
               </Link>
@@ -101,7 +101,7 @@ function Organictab() {
                 <h6>New Arrival</h6>
               </Link>
             </div>
-            <div>
+            <div id="remove">
               <Link>
                 <h6>Best Sale</h6>
               </Link>
@@ -121,7 +121,9 @@ function Organictab() {
 
         <div>
           <div className="row">
-            <div className="col-3">
+            <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 ">
+              <div className="row  cerosal-box-section">
+                <div className="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6">
               <div className="organic-cerosal">
                 <Slider ref={sliderRef} {...settings}>
                   {productDatas.slice(7, 10).map((product) => (
@@ -140,6 +142,8 @@ function Organictab() {
                   ))}
                 </Slider>
               </div>
+              </div>
+              <div className="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6">
               <div className="organic-box">
                 <div>
                   <p>Freshly</p>
@@ -156,12 +160,14 @@ function Organictab() {
                   </div>
                 </div>
               </div>
+              </div>
+              </div>
             </div>
-            <div className="col-9">
+            <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
               <div className="product-list">
                 <div className="row">
                   {productDatas.slice(0, 4).map((product) => (
-                    <div className="col-3" key={product.id}>
+                    <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12" key={product.id}>
                       <div className="product-card">
                         <div
                           className="product-card-top"
@@ -229,7 +235,7 @@ function Organictab() {
                 <br />
                 <div className="row">
                   {productDatas.slice(5, 9).map((product) => (
-                    <div className="col-3" key={product.id}>
+                    <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12" key={product.id}>
                       <div className="product-card">
                         <div
                           className="product-card-top"

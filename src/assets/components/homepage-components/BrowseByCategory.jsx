@@ -16,7 +16,7 @@ function BrowseByCategory() {
             </div>
           </div>
         </div>
-        <div className="row gap-4 ">
+        <div className="row gap-4 category-tabs-container ">
           <div className="col-lg-3 col-md-6 mb-4 category-tab" id="category-tab-1">
             <div className="category-list">
               <h4>Fruits & Vegitable</h4>

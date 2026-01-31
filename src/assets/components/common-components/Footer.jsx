@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css/common-css/footer.css";
 import footerlogo from "../../image/common-images/logo.webp";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -13,38 +14,38 @@ function Footer() {
             </a>
           </div>
           <div
-            className="d-flex justify-content-center align-items-center gap-5 mb-4 "
+            className=" d-flex justify-content-center align-items-center row mb-4 "
             id="footer-links"
           >
-            <div>
-              <a href="">
+            <div className="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+              <Link>
                 <h6>ABOUT OUR COMPANY</h6>
-              </a>
+              </Link>
             </div>
-            <div>
-              <a href="">
+            <div className="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+              <Link>
                 <h6>LATEST PRODUCTS</h6>
-              </a>
+              </Link>
             </div>
-            <div>
-              <a href="">
+            <div className="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+              <Link>
                 <h6>PAYMENT TYPE</h6>
-              </a>
+              </Link>
             </div>
-            <div>
-              <a href="">
+            <div className="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+              <Link>
                 <h6>AWARD WINNINGS</h6>
-              </a>
+              </Link>
             </div>
-            <div>
-              <a href="">
+            <div className="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+              <Link>
                 <h6>WORLD MEDIA PARTNER</h6>
-              </a>
+              </Link>
             </div>
-            <div>
-              <a href="">
+            <div className="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+              <Link>
                 <h6>FLASH OFFERS</h6>
-              </a>
+              </Link>
             </div>
           </div>
           <div

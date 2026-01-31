@@ -155,3 +155,37 @@
 .review-m h6 {
   font-weight: 800 !important;
 }
+
+@media (max-width:1024px) {
+  .review-tab {
+    width: 100% !important;
+  }
+  .review-tab-bottom{
+    margin-left: 90px;
+  }
+}
+
+@media (max-width:768px) {
+  .review-tab-bottom{
+    margin-left: 20px;
+  }
+}
+
+@media (max-width:425px) {
+  .review-tab-bottom{
+    margin-left: 50px;
+  }
+}
+
+@media (max-width:375px) {
+  .review-tab-bottom{
+    width: 100% !important;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width:320px) {
+  .revie-tab-bottom{
+    margin-left: 0px;
+  }
+}
