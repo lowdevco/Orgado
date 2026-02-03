@@ -7,7 +7,6 @@
 }
 
 #login-form input{
-    width: 100%;
     line-height: 60px;
     border: 1px solid #d8d7d7;
     background: transparent;
@@ -20,7 +19,6 @@
 }
 
 #login-form button{
-    width: 100%;
     display: inline-flex;
     height: 60px;
     background-color: #699c47;
@@ -49,9 +47,54 @@
 }
 
 #login-checkbox input{
-    width: 20px;
+    width: 20px !important; 
 }
 
 #login-checkbox{
     margin-right: 650px;
+}
+
+@media (max-width:2560px) {
+    .login-form-container form{
+        margin-left: 250px;
+    }
+}
+
+
+@media (max-width:1440px) {
+    .login-form-container form{
+        margin-left: 250px;
+    }
+}
+
+@media (max-width:1024px) {
+    .login-form-container form{
+        margin-left: 80px;
+        position: relative;
+        bottom: 50px;
+    }
+}
+
+@media (max-width:768px) {
+    #login-form button{
+        width: 100%;
+    }
+    
+    #login-form input{
+        width: 100%;
+    }
+
+        .login-form-container form{
+        margin-left: 20px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    #login-checkbox{
+        display: flex;
+        gap: 10px;
+    }
+    #login-checkbox label{
+        font-size: 15px;
+    }
 }

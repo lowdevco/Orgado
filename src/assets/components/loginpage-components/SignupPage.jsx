@@ -40,13 +40,16 @@ function SignupPage() {
 
   return (
     <div className="container my-5 signup-form-container">
-      <form action="">
+      <form action="" className="d-flex align-items-center justify-content-center">
         <div
           className="container  d-flex flex-column align-items-center justify-content-center"
           id="signup-form"
         >
-          <div className="d-flex gap-3 ">
-            <div>
+
+          <div className="register-inputs">
+
+          <div className=" row ">
+            <div className="col-xl-6 col-lg-6 col-md-6 col-12">
               <input
                 type="text"
                 placeholder="First Name"
@@ -54,7 +57,7 @@ function SignupPage() {
                 onChange={(e) => setFname(e.target.value)}
               />
             </div>
-            <div>
+            <div className="col-xl-3 col-lg-3 col-md-6 col-12">
               <input
                 type="text"
                 placeholder="Last Name"
@@ -64,8 +67,8 @@ function SignupPage() {
             </div>
           </div>
 
-          <div className="d-flex gap-3 ">
-            <div>
+          <div className="row ">
+            <div className="col-xl-6 col-lg-6 col-md-6 col-12">
               <input
                 type="email"
                 placeholder="Email"
@@ -73,7 +76,7 @@ function SignupPage() {
                 onChange={(e) => setUmail(e.target.value)}
               />
             </div>
-            <div>
+            <div className="col-xl-3 col-lg-3 col-md-6 col-12">
               <input
                 type="number"
                 placeholder="Phone Number"
@@ -83,8 +86,8 @@ function SignupPage() {
             </div>
           </div>
 
-          <div className="d-flex gap-3 ">
-            <div>
+          <div className=" row ">
+            <div className="col-xl-6 col-lg-6 col-md-6 col-12">
               <input
                 type="password"
                 placeholder="Password ( at least 6 Charecters )"
@@ -92,7 +95,7 @@ function SignupPage() {
                 onChange={(e) => setUpass(e.target.value)}
               />
             </div>
-            <div>
+            <div className="col-xl-3 col-lg-3 col-md-6 col-12">
               <select name="Gender" id="">
                 <option value="">Select Gender</option>
                 <option value="">Male</option>
@@ -101,7 +104,7 @@ function SignupPage() {
             </div>
           </div>
 
-          <div id="signup-checkbox" className="mb-1">
+          <div id="signup-checkbox" className="mb-1 d-flex gap-3">
             <input type="checkbox" />
             <label htmlFor="checkbox">
               {" "}
@@ -109,7 +112,10 @@ function SignupPage() {
             </label>
           </div>
 
-          <div className="mb-4">
+          </div>
+
+          <div className="register-btn-dets">
+          <div className="mb-4" id="register-btn">
             <button onClick={signUp}>Register Now</button>
           </div>
 
@@ -118,6 +124,7 @@ function SignupPage() {
             <span>
               <Link to="/login">Log in</Link>
             </span>
+          </div>
           </div>
         </div>
       </form>

@@ -63,7 +63,7 @@
 
 .contact-rt {
   border: 1px solid rgb(230, 230, 230);
-  height: 46vh;
+  height: auto;
   padding: 10px 30px;
   margin-bottom: 2rem;
   border-radius: 10px;
@@ -75,10 +75,50 @@
   color: #699c47;
   margin-top: 1.5rem;
 }
+.support-card{
+  height: auto !important ;
+}
 
 /* I Frame Section  */
 
 .i-frame-section {
   padding: 20px;
   height: 38rem;
+}
+
+
+@media (max-width:1440px) {
+  .contact-bg{
+    height: auto;
+  }
+}
+
+@media (max-width:1024px) {
+  .contact-rt{
+    width: auto;
+  }
+  .support-card{
+    width: 100%;
+  }
+  .rt-flexbox{
+    display: flex;
+  }
+}
+
+@media (max-width:425px) {
+    .contact-input-name{
+      margin-bottom: 20px;
+    }
+    .contact-button {
+      width: 100% !important;
+    }
+}
+
+@media (max-width:320px) {
+  .contact-rt{
+    display: none;
+  }
+  .support-card{
+    display: none;
+  }
 }

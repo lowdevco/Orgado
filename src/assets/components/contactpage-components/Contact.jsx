@@ -27,11 +27,11 @@ function Contact() {
     <section className="container">
       <div className="contact-bg">
         <div
-          className="d-flex row align-items-center container"
+          className=" row align-items-center container"
           id="container-wrap"
         >
           {/* Left tab */}
-          <div className="col-8 container" id="contact-lt">
+          <div className="col-xl-8 col-lg-12 col-12 container" id="contact-lt">
             <form className="contact-form" onSubmit={handleDataSubmit}>
               <div className="contact-lt-text mb-4">
                 <h1 style={{ fontSize: 60, fontWeight: 700 }}>Get in Touch</h1>
@@ -91,9 +91,9 @@ function Contact() {
           </div>
 
           {/* Right tab */}
-          <div className="col-4 container">
+          <div className="col-xl-4 col-lg-6 col- container">
             <div className="contact-rt">
-              <div className="support-card p-4 h-100">
+              <div className="support-card p-4 ">
                 <h4 className="fw-500 mb-4">Support Contact</h4>
 
                 {/* Phone */}
@@ -165,11 +165,15 @@ function Contact() {
                     </p>
                   </div>
                 </div>
+
+
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <br />
 
       <div>
         <div className="i-frame-section">

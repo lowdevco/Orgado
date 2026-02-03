@@ -38,3 +38,18 @@
     background-color: transparent;
     color: #699c47;
 }
+
+@media (max-width:425px) {
+    .track{
+        flex-direction: column;
+    }
+    .track-div button{
+        width: 100%;
+    }
+}
+
+@media (max-width:375px) {
+    .track-div input{
+        width: 100%;
+    }
+}

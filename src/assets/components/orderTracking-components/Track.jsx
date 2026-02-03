@@ -7,7 +7,7 @@ function Track() {
     <div>
       <div className='container track-order'>
         <div className='track-div'>
-            <form className='d-flex gap-3'>
+            <form className='track d-flex gap-3'>
                 <input
                  type="text" 
                  placeholder='Enter Your Order ID'

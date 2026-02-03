@@ -102,3 +102,34 @@
   background-color: #fcfcfc;
   color: #6a9739;
 }
+
+
+@media (max-width:1024px ) {
+  .search-text h4{
+    display: none;
+  }
+  .searchbox-hamburg svg{
+    display: none;
+  }
+    .category-btn h6{
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-text h6{
+    font-size: 12px;
+  }
+  .searchbox-chevron svg{
+    display: none;
+  }
+  .category-btn h6{
+    margin-left: 0px;
+  }
+}
+
+@media (max-width:500px) {
+  .searchbox-div{
+    display: none;
+  }
+}

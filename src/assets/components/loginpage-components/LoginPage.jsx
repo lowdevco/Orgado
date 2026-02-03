@@ -35,15 +35,15 @@ function LoginPage() {
     <div className="container my-5 login-form-container">
       <form onSubmit={login}>
       <div
-        className="container  d-flex flex-column align-items-center justify-content-center"
+        className="container"
         id="login-form"
       >
         <div>
-          <input type="text" placeholder="orgado@user.com" />
+          <input type="text" name="email" placeholder="orgado@user.com" autoComplete="email" />
         </div>
 
         <div>
-          <input type="text" placeholder="********" />
+          <input type="password" name="password" placeholder="********" autoComplete="current-password" />
         </div>
 
         <div id="login-checkbox" className="mb-1">
