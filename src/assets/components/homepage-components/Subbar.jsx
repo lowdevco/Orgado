@@ -1,5 +1,6 @@
 import React from "react";
 import "../../css/hompage-css/subbar.css";
+import { Link } from "react-router-dom";
 
 function Subbar() {
   return (
@@ -8,15 +9,15 @@ function Subbar() {
         <div className="container-fluid d-flex justify-content-between py-2 gap-3 subbar-container">
           <div className="d-flex justify-content-evenly gap-3">
             <div>
-              <a href="" id="sub-link">
+              <Link to="/about" id="sub-link">
                 About Us
-              </a>
+              </Link>
             </div>
             <div>|</div>
             <div>
-              <a href="" id="sub-link">
+              <Link to="/signup" id="sub-link">
                 My account
-              </a>
+              </Link>
             </div>
           </div>
 

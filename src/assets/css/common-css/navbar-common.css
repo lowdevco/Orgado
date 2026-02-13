@@ -4,6 +4,12 @@
   background-color: transparent;
 }
 
+.navbar-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  overflow: visible;
+}
 
 .navbar-icon {
   cursor: pointer;
@@ -70,13 +76,13 @@
 #navbar-id {
   position: sticky;
   top: 0;
-  z-index: 1000;
-  box-shadow: 0 0.2px 5px rgb(197, 197, 197);
+  z-index: 99999;
   background-color: white;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible !important;
   border-top: 1px solid rgb(235, 235, 235);
 }
 
@@ -123,7 +129,7 @@ nav {
 
 /* side-bar  */
 
-#sidebar-icon{
+#sidebar-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,33 +137,35 @@ nav {
   display: none !important;
 }
 
-.mobile-menu-links{
+.mobile-menu-links {
   display: none !important;
 }
 
-.mobile-menu-links hr{
+.mobile-menu-links hr {
   display: none !important;
 }
 
-.mobile-menu-links a{
+.mobile-menu-links a {
   display: none !important;
   text-decoration: none;
   color: #222;
   font-weight: 600;
 }
 
-.offcanvas-input input{
+.offcanvas-input input {
   border: none;
   user-select: none;
   outline: none;
 }
 
-@media (max-width:768px) {
-  .mobile-menu-links,.mobile-menu-links a,.mobile-menu-links hr{
+@media (max-width: 768px) {
+  .mobile-menu-links,
+  .mobile-menu-links a,
+  .mobile-menu-links hr {
     display: block !important;
   }
 
-  #sidebar-icon{
+  #sidebar-icon {
     display: flex !important;
   }
 }
@@ -173,8 +181,8 @@ nav {
   }
 }
 
-@media (max-width:320px) {
-  #sidebar-icon{
+@media (max-width: 320px) {
+  #sidebar-icon {
     padding: 0px !important;
   }
 }

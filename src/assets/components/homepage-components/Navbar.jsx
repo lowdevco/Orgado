@@ -7,6 +7,8 @@ function Navbar() {
   // State to manage Shop dropdown visibility
   const [isShopHovered, setIsShopHovered] = useState(false);
 
+  const [isPagesHovered, setIsPagesHovered] = useState(false);
+
   return (
     <nav className="navbar-wrapper">
       <div className="container-fluid" id="navbar-id">
@@ -68,20 +70,55 @@ function Navbar() {
                 <li>
                   <Link to="/cart">Cart</Link>
                 </li>
-                <li>
-                  
-                </li>
+                <li></li>
               </ul>
             </div>
             {/* SHOP DROPDOWN END */}
 
-            <div className="nav-item">
-              <h6>
-                <Link to="/page" className="nav-link-custom">
+            {/* PAGE DROPDOWN START */}
+            <div
+              className="nav-item-dropdown"
+              onMouseEnter={() => setIsPagesHovered(true)}
+              onMouseLeave={() => setIsPagesHovered(false)}
+            >
+              <h6 className="d-flex align-items-center gap-1">
+                <Link
+                  className={`nav-link-custom ${isPagesHovered ? "active-green" : ""}`}
+                >
                   Pages
                 </Link>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  fill={isPagesHovered ? "#699c47" : "currentColor"}
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
               </h6>
+
+              {/* Dropdown Menu */}
+              <ul className={`dropdown-popup ${isPagesHovered ? "show" : ""}`}>
+                <li>
+                  <Link to="/shop">About</Link>
+                </li>
+                <li>
+                  <Link to="/signup">Register</Link>
+                </li>
+                <li>
+                  <Link to="/login">Login</Link>
+                </li>
+                <li>
+                  <Link to="/">Team</Link>
+                </li>
+              </ul>
             </div>
+            {/* PAGE DROPDOWN END */}
+
             <div className="nav-item">
               <h6>
                 <Link to="/blog" className="nav-link-custom">

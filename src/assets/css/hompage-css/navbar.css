@@ -57,10 +57,8 @@
 
 #navbar-id {
   position: sticky;
-  position: relative;
   top: 0;
-  z-index: 10000;
-  box-shadow: 0 0.2px 5px rgb(197, 197, 197);
+  z-index: 99999;
   background-color: white;
   height: 100px;
   display: flex;
@@ -69,11 +67,15 @@
   overflow: visible !important;
 }
 
+ul{
+  list-style: none;
+}
+
 .navbar-wrapper {
   position: sticky;
   top: 0;
-  z-index: 10000;
-  width: 100%;
+  z-index: 99999;
+  overflow: visible;
 }
 
 .nav-link-custom:hover {

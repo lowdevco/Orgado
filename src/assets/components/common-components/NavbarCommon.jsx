@@ -3,11 +3,16 @@ import navbarlogo from "../../image/common-images/logo.webp";
 import "../../css/common-css/navbar-common.css";
 import { Link } from "react-router-dom";
 import logo from "../../image/common-images/logo.webp";
+import { useState } from "react";
 
 function NavbarCommon() {
+  const [isShopHovered, setIsShopHovered] = useState(false);
+
+  const [isPagesHovered, setIsPagesHovered] = useState(false);
+
   return (
     <>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-wrap navbar-expand-lg">
         <div className="container-fluid" id="navbar-id">
           <div className="container-fluid d-flex justify-content-between py-3 align-items-center navbar-container">
             {/*  */}
@@ -27,48 +32,97 @@ function NavbarCommon() {
                 </h6>
               </div>
 
-              <div className="d-flex">
-                <h6>
-                  <Link to="/shop" className="nav-link-custom">
+              {/* DropDown Start  */}
+
+              <div
+                className="nav-item-dropdown"
+                onMouseEnter={() => setIsShopHovered(true)}
+                onMouseLeave={() => setIsShopHovered(false)}
+              >
+                <h6 className="d-flex align-items-center gap-1">
+                  <Link
+                    className={`nav-link-custom ${isShopHovered ? "active-green" : ""}`}
+                  >
                     Shop
-                  </Link>{" "}
+                  </Link>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-chevron-down"
+                    width="12"
+                    height="12"
+                    fill={isShopHovered ? "#699c47" : "currentColor"}
                     viewBox="0 0 16 16"
                   >
                     <path
                       fillRule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                     />
                   </svg>
                 </h6>
+
+              {/* Dropdown Menu */}
+              <ul className={`dropdown-popup ${isShopHovered ? "show" : ""}`}>
+                <li>
+                  <Link to="/shop">Shop</Link>
+                </li>
+                <li>
+                  <Link to="/wishlist">Wishlist</Link>
+                </li>
+                <li>
+                  <Link to="/cart">Cart</Link>
+                </li>
+                <li></li>
+              </ul>
+
               </div>
 
-              <div className="d-flex">
-                <h6>
-                  <Link to="/page" className="nav-link-custom">
-                    Pages
-                  </Link>{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-chevron-down"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                    />
-                  </svg>
-                </h6>
-              </div>
+              {/* DropDown End  */}
 
+              
+            {/* PAGE DROPDOWN START */}
+            <div
+              className="nav-item-dropdown"
+              onMouseEnter={() => setIsPagesHovered(true)}
+              onMouseLeave={() => setIsPagesHovered(false)}
+            >
+              <h6 className="d-flex align-items-center gap-1">
+                <Link
+                  className={`nav-link-custom ${isPagesHovered ? "active-green" : ""}`}
+                >
+                  Pages
+                </Link>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  fill={isPagesHovered ? "#699c47" : "currentColor"}
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </h6>
+
+              {/* Dropdown Menu */}
+              <ul className={`dropdown-popup ${isPagesHovered ? "show" : ""}`}>
+                <li>
+                  <Link to="/shop">About</Link>
+                </li>
+                <li>
+                  <Link to="/signup">Register</Link>
+                </li>
+                <li>
+                  <Link to="/login">Login</Link>
+                </li>
+                <li>
+                  <Link to="/">Team</Link>
+                </li>
+              </ul>
+            </div>
+            {/* PAGE DROPDOWN END */}
+
+              
               <div>
                 <h6>
                   <Link to="/blog" className="nav-link-custom">
