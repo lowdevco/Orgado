@@ -5,12 +5,17 @@ import "../../css/hompage-css/trending-product.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import productDatas from "../../../data/productDatas";
+import { useCart } from "../../../context/CartContext";
+
 
 // Products
 
 const trendingData = productDatas.slice(0, 10);
 
 function TrendingProduct() {
+
+  const { addToCart } = useCart();
+
   const settings = {
     dots: false,
     infinite: true,
@@ -102,7 +107,11 @@ function TrendingProduct() {
                       className=" hover-element gap-3 pb-4"
                       style={{ height: "100%" }}
                     >
-                      <button className="add-to-cart-btn" id="card-btn">
+                      <button
+                        className="add-to-cart-btn"
+                        id="card-btn"
+                        onClick={() => addToCart(product)}
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"

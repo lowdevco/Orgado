@@ -7,7 +7,8 @@
 .navbar-wrap {
   position: sticky;
   top: 0;
-  z-index: 99999;
+  /* CHANGED: Lowered from 99999 to 1020 so the sidebar (1050) can sit on top */
+  z-index: 1020; 
   overflow: visible;
 }
 
@@ -76,7 +77,8 @@
 #navbar-id {
   position: sticky;
   top: 0;
-  z-index: 99999;
+  /* CHANGED: Lowered from 99999 to 1020 */
+  z-index: 1020;
   background-color: white;
   height: 100px;
   display: flex;
@@ -113,7 +115,8 @@
 
 nav {
   padding: 0px !important;
-  overflow: hidden;
+  /* CHANGED: Removed overflow: hidden to prevent clipping */
+  overflow: visible !important; 
   position: sticky;
   top: 0;
   left: 0;
@@ -156,6 +159,16 @@ nav {
   border: none;
   user-select: none;
   outline: none;
+}
+
+/* ADDED: Ensure Offcanvas is always on top of the navbar */
+.offcanvas {
+  z-index: 1050 !important;
+}
+
+/* ADDED: Ensure the dark overlay covers the navbar */
+.offcanvas-backdrop {
+  z-index: 1040 !important;
 }
 
 @media (max-width: 768px) {
