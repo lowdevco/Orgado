@@ -1,3 +1,17 @@
-.cart-parent-div{
-    height: auto;
+.cart-container {
+  min-height: 80vh;
+}
+
+.btn-outline-danger {
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+.card-title {
+  font-weight: 600;
 }
