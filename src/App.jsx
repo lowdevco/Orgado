@@ -18,6 +18,7 @@ import TrackOrder from "./assets/pages/TrackOrder";
 import SignupPage from "./assets/components/loginpage-components/SignupPage";
 import LoginPage from "./assets/components/loginpage-components/LoginPage";
 import Cart from "./assets/pages/Cart";
+import Shop from "./assets/pages/Shop";
 
 function App() {
   const location = useLocation();
@@ -38,6 +39,7 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/shop" element={<Shop/>} />
       </Routes>
 
       <Footer />
