@@ -2,8 +2,20 @@ import React from "react";
 import "../../css/cart-css/cart.css";
 import { useCart } from "../../../context/CartContext";
 
+
+const loadScript = (src) => {
+  return new Promise((resolve) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.onload = () => resolve(true);
+    script.onerror = () => resolve(false);
+    document.body.appendChild(script);
+  });
+};
+
 function CartSection() {
-  const { cart, removeFromCart, updateQuantity } = useCart();
+
+  const { cart, removeFromCart, updateQuantity, clearCart } = useCart();
 
   const cartTotal = cart.reduce(
     (total, item) => total + item.price * item.quantity,
@@ -17,6 +29,72 @@ function CartSection() {
       removeFromCart(item.id);
     } else {
       updateQuantity(item.id, -1);
+    }
+  };
+
+  
+  const BACKEND_URL = "https://orgado-api.onrender.com";
+
+  // Razorpay Checkout Handler
+  const handleCheckout = async () => {
+    const res = await loadScript(
+      "https://checkout.razorpay.com/v1/checkout.js",
+    );
+
+    if (!res) {
+      alert("Razorpay SDK failed to load. Are you online?");
+      return;
+    }
+
+    try {
+      //  Create order to Render backend
+      const data = await fetch(`${BACKEND_URL}/create-order`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ amount: cartTotal }),
+      }).then((t) => t.json());
+
+      //  Configure Razorpay 
+
+      const options = {
+        key: "rzp_live_SIrz1l5R2x8fRB", 
+        amount: data.amount,
+        currency: "INR",
+        name: "Orgado Store",
+        description: "Shopping Cart Purchase",
+        order_id: data.id,
+        handler: async function (response) {
+
+          //  Verifying payment on  Render backend
+
+          const verifyData = await fetch(`${BACKEND_URL}/verify-payment`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              razorpay_order_id: response.razorpay_order_id,
+              razorpay_payment_id: response.razorpay_payment_id,
+              razorpay_signature: response.razorpay_signature,
+            }),
+          }).then((t) => t.json());
+
+          if (verifyData.message === "Payment verified successfully!") {
+            alert("Payment Successful! Thank you for your order.");
+            if (clearCart) clearCart(); // Empty cart
+          } else {
+            alert("Payment verification failed. Please contact support.");
+          }
+        },
+        theme: {
+          color: "#699c47",
+        },
+      };
+
+      //  Open Razorpay window
+      const paymentObject = new window.Razorpay(options);
+      paymentObject.open();
+    } catch (error) {
+      console.error("Error during checkout:", error);
+      alert("Something went wrong initializing the payment.");
     }
   };
 
@@ -90,7 +168,7 @@ function CartSection() {
 
                     <div className="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-auto">
                       <span className="text-muted small mb-0 fw-medium">
-                        Price: ${item.price}
+                        Price: ₹{item.price}
                       </span>
 
                       {/* Quantity Controls */}
@@ -145,7 +223,7 @@ function CartSection() {
                       </span>
                     </span>
                     <span className="text-dark">
-                      ${(item.price * item.quantity).toFixed(2)}
+                      ₹{(item.price * item.quantity).toFixed(2)}
                     </span>
                   </div>
                 ))}
@@ -161,11 +239,12 @@ function CartSection() {
               <div className="d-flex justify-content-between mb-4">
                 <span className="fw-bold">Total Price:</span>
                 <span className="fw-bold fs-5" style={{ color: "#699c47" }}>
-                  ${cartTotal.toFixed(2)}
+                  ₹{cartTotal.toFixed(2)}
                 </span>
               </div>
 
               <button
+                onClick={handleCheckout}
                 className="btn w-100 py-2 fw-bold shadow-sm text-white"
                 style={{ backgroundColor: "#699c47", border: "none" }}
               >

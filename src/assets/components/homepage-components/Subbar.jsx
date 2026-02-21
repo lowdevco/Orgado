@@ -25,9 +25,7 @@ function Subbar() {
             <div id="option">
               <select name="language" id="language">
                 <option value="EN">English</option>
-                <option value="HN">Hindi</option>
                 <option value="AR">Arabic</option>
-                <option value="BE">Bengali</option>
                 <option value="FR">French</option>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -47,10 +45,9 @@ function Subbar() {
             <div>|</div>
             <div id="option">
               <select name="currency" id="currency">
-                <option value="USD">USD</option>
+                <option value="INR">INR</option>
                 <option value="EUR">EUR</option>
-                <option value="JPY">JPY</option>
-                <option value="GBP">GBP</option>
+                <option value="USD">USD</option>
               </select>
             </div>
           </div>

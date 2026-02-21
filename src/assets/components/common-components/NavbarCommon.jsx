@@ -283,7 +283,7 @@ function NavbarCommon() {
                 </svg>
               </div>
               <div>
-                <p>New York, USA - 254230</p>
+                <p>KERALA - 673592</p>
               </div>
             </div>
 
@@ -301,7 +301,7 @@ function NavbarCommon() {
                 </svg>
               </div>
               <div>
-                <p>+(02) 587-898-250</p>
+                <p>+(91) 1600 31 3424</p>
               </div>
             </div>
 
@@ -319,7 +319,7 @@ function NavbarCommon() {
                 </svg>
               </div>
               <div>
-                <p>support@mail.com</p>
+                <p>support@orgado.com</p>
               </div>
             </div>
           </div>

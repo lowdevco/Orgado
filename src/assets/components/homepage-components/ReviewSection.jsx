@@ -24,7 +24,10 @@ function ReviewSection() {
   return (
     <div className="container my-5">
       <div className="row gap-3">
-        <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 review-tab" id="review-tab-1">
+        <div
+          className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 review-tab"
+          id="review-tab-1"
+        >
           <div className="review-cerosal text-center">
             <Slider {...settings}>
               {reviewDatas.map((review) => (
@@ -47,7 +50,10 @@ function ReviewSection() {
             </Slider>
           </div>
         </div>
-        <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 review-tab" id="review-tab-2">
+        <div
+          className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 review-tab"
+          id="review-tab-2"
+        >
           <div>
             <h6>Orgainic</h6>
             <a href="">Meat & Milk</a>
@@ -59,7 +65,10 @@ function ReviewSection() {
             </button>
           </div>
         </div>
-        <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 review-tab" id="review-tab-3">
+        <div
+          className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 review-tab"
+          id="review-tab-3"
+        >
           <div>
             <h6>Orgainic</h6>
             <a href="">Vegetable</a>
@@ -77,7 +86,10 @@ function ReviewSection() {
       <br />
 
       <div className="row my-1 gap-3 review-bottom-container">
-        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12  review-tab-bottom" id="review-tab-bottom-1">
+        <div
+          className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12  review-tab-bottom"
+          id="review-tab-bottom-1"
+        >
           <div className="text-center">
             <h5>Download the App</h5>
             <p>Make your life easier</p>
@@ -87,7 +99,10 @@ function ReviewSection() {
             <div className="download-tab" id="download-tab-2"></div>
           </div>
         </div>
-        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 review-tab-bottom" id="review-tab-bottom-2">
+        <div
+          className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 review-tab-bottom"
+          id="review-tab-bottom-2"
+        >
           <div className="review-m">
             <div className="d-flex justify-content-between align-items-center">
               <h3>Top Rated</h3>
@@ -98,28 +113,31 @@ function ReviewSection() {
                 <div className="m-img" id="m-img-lt-1"></div>
                 <div>
                   <h6>Honey Nectar</h6>
-                  <h5>$100</h5>
+                  <h5>₹100</h5>
                 </div>
               </div>
               <div className="review-m-content d-flex gap-3 mb-3">
                 <div className="m-img" id="m-img-lt-2"></div>
                 <div>
                   <h6>Pressed Olive oil</h6>
-                  <h5>$300</h5>
+                  <h5>₹300</h5>
                 </div>
               </div>
               <div className="review-m-content d-flex gap-3">
                 <div className="m-img" id="m-img-lt-3"></div>
                 <div>
                   <h6>Earth Root Chips</h6>
-                  <h5>$400</h5>
+                  <h5>₹400</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 review-tab-bottom" id="review-tab-bottom-3">
+        <div
+          className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 review-tab-bottom"
+          id="review-tab-bottom-3"
+        >
           <div className="review-m">
             <div className="d-flex justify-content-between align-items-center">
               <h3>Popular</h3>
@@ -130,34 +148,37 @@ function ReviewSection() {
                 <div className="m-img" id="m-img-rt-1"></div>
                 <div>
                   <h6>Midnight Chocolate</h6>
-                  <h5>$800</h5>
+                  <h5>₹800</h5>
                 </div>
               </div>
               <div className="review-m-content d-flex gap-3 mb-3">
                 <div className="m-img" id="m-img-rt-2"></div>
                 <div>
                   <h6>Velvet Roast</h6>
-                  <h5>$200</h5>
+                  <h5>₹200</h5>
                 </div>
               </div>
               <div className="review-m-content d-flex gap-3">
                 <div className="m-img" id="m-img-rt-3"></div>
                 <div>
                   <h6>Dry Fruits</h6>
-                  <h5>$1000</h5>
+                  <h5>₹1000</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12  review-tab-bottom" id="review-tab-bottom-4">
+        <div
+          className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12  review-tab-bottom"
+          id="review-tab-bottom-4"
+        >
           <h6>Freshly</h6>
           <h4 style={{ fontWeight: "750" }}>Maitta Potato</h4>
           <div>
             <span>From</span>
             <span>
-              <h3 style={{ color: "brown", fontWeight: "800" }}>$9.00</h3>
+              <h3 style={{ color: "brown", fontWeight: "800" }}>₹20</h3>
             </span>
           </div>
         </div>

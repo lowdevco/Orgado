@@ -127,7 +127,6 @@ function ShopSection() {
                         </svg>
                       </button>
 
-                    
                       <button
                         className="add-to-like-btn"
                         id="shop-card-btn"
@@ -159,7 +158,7 @@ function ShopSection() {
                     <h4 className="shop-prod-name">
                       <a href="#">{product.name}</a>
                     </h4>
-                    <h4 className="shop-prod-price">${product.price}</h4>
+                    <h4 className="shop-prod-price">₹{product.price}</h4>
                   </div>
                 </div>
               </div>

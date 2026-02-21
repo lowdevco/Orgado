@@ -26,10 +26,7 @@ function Contact() {
   return (
     <section className="container">
       <div className="contact-bg">
-        <div
-          className=" row align-items-center container"
-          id="container-wrap"
-        >
+        <div className=" row align-items-center container" id="container-wrap">
           {/* Left tab */}
           <div className="col-xl-8 col-lg-12 col-12 container" id="contact-lt">
             <form className="contact-form" onSubmit={handleDataSubmit}>
@@ -113,10 +110,10 @@ function Contact() {
                   <div>
                     <h6 className="fw-bold mb-1">Phone</h6>
                     <p className="mb-0 large text-muted">
-                      Mobile: (+88) 872-670-780
+                      Mobile: +(91) 1600 31 3424
                     </p>
                     <p className="mb-0 large text-muted">
-                      Mobile: (+88) 422-655-793
+                      Mobile: (+91) 1800 42 2434
                     </p>
                   </div>
                 </div>
@@ -137,8 +134,8 @@ function Contact() {
                   </div>
                   <div>
                     <h6 className="fw-bold mb-1">Email</h6>
-                    <p className="mb-0 large text-muted">info@example.com</p>
-                    <p className="mb-0 large text-muted">contact@example.com</p>
+                    <p className="mb-0 large text-muted">info@orgadont.com</p>
+                    <p className="mb-0 large text-muted">contact@orgado.com</p>
                   </div>
                 </div>
 
@@ -160,13 +157,11 @@ function Contact() {
                   <div>
                     <h6 className="fw-bold mb-1">Location</h6>
                     <p className="mb-0 large text-muted">
-                      Abbot Favicon Kinney, New York,
-                      <br /> USA - 25423
+                      Bathery, Wayanad
+                      <br /> KERALA - 673592
                     </p>
                   </div>
                 </div>
-
-
               </div>
             </div>
           </div>
@@ -180,7 +175,7 @@ function Contact() {
           <div className="map-container rounded-3 overflow-hidden">
             <iframe
               title="New York Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1647858966778!5m2!1sen!2sbd%22"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37325.70246531616!2d76.23603660334044!3d11.651954748953475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba608bb285e4b7d%3A0xe29cb8dc789996ce!2sSultan%20Bathery%2C%20Kerala%20673592!5e1!3m2!1sen!2sin!4v1771701428657!5m2!1sen!2sin"
               width="100%"
               height="450"
               style={{ border: 0 }}

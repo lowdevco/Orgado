@@ -25,7 +25,7 @@ function Tabs() {
           </div>
           <div>
             <h6>Free Shipping</h6>
-            <p>On All Order Over $599</p>
+            <p>On All Order Over ₹499</p>
           </div>
           </div>
         </div>

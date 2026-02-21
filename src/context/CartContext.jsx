@@ -34,7 +34,7 @@ export const CartProvider = ({ children }) => {
       }
     });
       
-      // alert to toast here to notify user
+      // alert to  notify user
       
       // alert(`${product.name} added to cart!`);
       
@@ -60,13 +60,17 @@ export const CartProvider = ({ children }) => {
     );
   };
 
+  const clearCart = () => {
+    setCart([]);
+  };
+
     // Calculate total items
     
   const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, updateQuantity, totalItems }}
+      value={{ cart, addToCart, removeFromCart, updateQuantity, totalItems, clearCart }}
     >
       {children}
     </CartContext.Provider>

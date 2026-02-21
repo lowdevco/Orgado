@@ -146,7 +146,6 @@ function TrendingProduct() {
                           </svg>
                         </button>
 
-                        
                         <button
                           className="add-to-like-btn"
                           id="card-btn"
@@ -177,7 +176,7 @@ function TrendingProduct() {
                       <h4 className="prod-name">
                         <a href="">{product.name}</a>
                       </h4>
-                      <h4 className="prod-price">${product.price}</h4>
+                      <h4 className="prod-price">₹{product.price}</h4>
                     </div>
                   </div>
                 </div>

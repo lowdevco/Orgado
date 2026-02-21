@@ -207,7 +207,7 @@ function Organictab() {
                             }}
                           >
                             <div className="organic-prod">
-                              <h3>${product.price}</h3>
+                              <h3>₹{product.price}</h3>
                             </div>
                           </div>
                         </div>
@@ -220,7 +220,7 @@ function Organictab() {
                     <div>
                       <p>Freshly</p>
                       <h3>Maitta Potato</h3>
-                      <span>From</span> <h3>$9.00</h3>
+                      <span>From</span> <h3>₹20</h3>
                     </div>
                     <br />
                     <div className="d-flex align-items-end ">
@@ -271,7 +271,7 @@ function Organictab() {
                               {product.name}
                             </Link>
                           </h4>
-                          <h4 className="prod-price">${product.price}</h4>
+                          <h4 className="prod-price">₹{product.price}</h4>
                         </div>
                       </div>
                     </div>
@@ -364,7 +364,7 @@ function Organictab() {
                             <h4 className="prod-name">
                               <a href="">{product.name}</a>
                             </h4>
-                            <h4 className="prod-price">${product.price}</h4>
+                            <h4 className="prod-price">₹{product.price}</h4>
                           </div>
                         </div>
                       </div>
