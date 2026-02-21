@@ -19,6 +19,7 @@ import SignupPage from "./assets/components/loginpage-components/SignupPage";
 import LoginPage from "./assets/components/loginpage-components/LoginPage";
 import Cart from "./assets/pages/Cart";
 import Shop from "./assets/pages/Shop";
+import Favorite from "./assets/pages/Favorite";
 
 function App() {
   const location = useLocation();
@@ -39,7 +40,8 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/shop" element={<Shop/>} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/fav" element={<Favorite/>} />
       </Routes>
 
       <Footer />

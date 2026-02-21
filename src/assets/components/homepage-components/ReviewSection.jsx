@@ -53,9 +53,9 @@ function ReviewSection() {
             <a href="">Meat & Milk</a>
             <p>Premium quality meat & milk</p>
             <button className="btn product-btn">
-              <a href="" style={{ fontSize: 16 }}>
+              <Link to="/shop" style={{ fontSize: 16 }}>
                 Shop Now
-              </a>
+              </Link>
             </button>
           </div>
         </div>
@@ -65,9 +65,9 @@ function ReviewSection() {
             <a href="">Vegetable</a>
             <p>Premium quality vegetables</p>
             <button className=" btn product-btn">
-              <a href="" style={{ fontSize: 16 }}>
+              <Link to="/shop" style={{ fontSize: 16 }}>
                 Shop Now
-              </a>
+              </Link>
             </button>
           </div>
         </div>

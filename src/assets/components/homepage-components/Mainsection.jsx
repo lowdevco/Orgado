@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css/hompage-css/mainsection.css";
 import swirl from "../../image/hompage-images/swirl.png";
+import { Link } from "react-router-dom";
 
 function Mainsection() {
   return (
@@ -18,7 +19,9 @@ function Mainsection() {
               <br /> fresh vegetable, and food Shop Now
             </p>
             <div className="d-flex">
-              <button type="submit">Shop Now</button>
+              <Link to="/shop">
+                <button>Shop Now</button>
+              </Link>
               <img src={swirl} alt="bounce" className="bounce-img" />
             </div>
           </div>
