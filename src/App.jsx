@@ -8,6 +8,7 @@ import NavbarCommon from "./assets/components/common-components/NavbarCommon";
 import Header from "./assets/components/homepage-components/Header";
 import Subbar from "./assets/components/homepage-components/Subbar";
 import Footer from "./assets/components/common-components/Footer";
+import NotFound from "./assets/components/common-components/NotFound";
 
 // Pages import
 
@@ -20,6 +21,7 @@ import LoginPage from "./assets/components/loginpage-components/LoginPage";
 import Cart from "./assets/pages/Cart";
 import Shop from "./assets/pages/Shop";
 import Favorite from "./assets/pages/Favorite";
+import About from "./assets/pages/About";
 
 function App() {
   const location = useLocation();
@@ -34,6 +36,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/track" element={<TrackOrder />} />
@@ -41,7 +44,8 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/fav" element={<Favorite/>} />
+        <Route path="/fav" element={<Favorite />} />
+        <Route path="/about" element={<About />} />
       </Routes>
 
       <Footer />

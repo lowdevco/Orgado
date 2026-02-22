@@ -9,7 +9,7 @@ function Subbar() {
         <div className="container-fluid d-flex justify-content-between py-2 gap-3 subbar-container">
           <div className="d-flex justify-content-evenly gap-3">
             <div>
-              <Link to="/about" id="sub-link">
+              <Link to="/blog" id="sub-link">
                 About Us
               </Link>
             </div>

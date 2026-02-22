@@ -107,9 +107,9 @@ function Footer() {
       <div className="footer-bottom d-flex justify-content-center align-items-center">
         <div>
           <p>
-            All Rights Reserved | Copyrighted by ©2023{" "}
+            All Rights Reserved | Copyrighted by ©2026{" "}
             <a href="" target="_blank">
-              BDevs
+              lowdevco
             </a>
           </p>
         </div>

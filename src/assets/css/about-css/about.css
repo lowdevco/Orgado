@@ -1,0 +1,63 @@
+#about-section {
+    overflow: hidden;
+}
+
+#about-section h1 {
+    color: #1a1a1a;
+    line-height: 1.1;
+    font-size: 3.5rem;
+}
+
+#about-section .ls-2 {
+    letter-spacing: 2px;
+}
+
+#about-section .about-image-container {
+    background: linear-gradient(135deg, #f0f7ec 0%, #ffffff 100%);
+    border-radius: 30px;
+    border: 1px solid #e2ebd9;
+}
+
+.about-feature-card {
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important;
+}
+
+#about-section .product-btn {
+    background-color: #51a31d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#about-section .product-btn:hover {
+    background-color: #3e7d16;
+    transform: scale(1.05);
+}
+
+.bounce-img {
+    animation: bounce 4s infinite ease-in-out;
+    width: 70px;
+    opacity: 0.8;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
+}
+
+.about-contact-box {
+    border-left: 3px solid #51a31d;
+    padding-left: 20px;
+}
+@media (max-width: 991px) {
+    #about-section h1 {
+        font-size: 2.5rem;
+    }
+}

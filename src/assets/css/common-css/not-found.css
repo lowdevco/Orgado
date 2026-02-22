@@ -1,0 +1,65 @@
+.not-found h1{
+    font-size: 15rem;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.not-found h1:hover{
+    color: #699c47;
+    transition: color 0.3s ease;
+}
+
+.not-found p{
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.not-found h2{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.msg-404 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+@media (max-width:768px) {
+    .not-found h1{
+        font-size: 8rem;
+    }
+    .not-found h2{
+        font-size: 1.5rem;
+    }
+    .msg-404 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:1024px){
+    .not-found h1{
+        font-size: 10rem;
+    }
+    .not-found h2{
+        font-size: 1.8rem;
+    }
+    .msg-404 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:425px){
+    .not-found h1{
+        font-size: 6rem;
+    }
+    .not-found h2{
+        font-size: 1.2rem;
+    }
+    .msg-404 {
+        font-size: 0.9rem;
+    }
+}
