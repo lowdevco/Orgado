@@ -7,7 +7,6 @@
   box-shadow: 0 10px 20px 0 rgba(8, 0, 42, 0.08);
 }
 
-
 .searchbar-input {
   border: none;
   outline: none;
@@ -20,12 +19,16 @@
   background-color: transparent;
 }
 
+.navbar-hamburg {
+  display: none;
+}
+
 .navbar-hamburg svg {
   cursor: pointer;
   height: 40px;
   width: 40px;
   color: black;
-  display: flex; /* Changed from none/flex conflict */
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -41,7 +44,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 10px 20px 0 rgba(8, 0, 42, 0.08);
-  position: relative; /* Added for badge positioning */
+  position: relative; 
 }
 
 #search-bar input {
@@ -59,7 +62,6 @@
 #navbar-id {
   position: sticky;
   top: 0;
-  
   z-index: 1020;
   background-color: white;
   height: 100px;
@@ -76,7 +78,6 @@ ul {
 .navbar-wrapper {
   position: sticky;
   top: 0;
- 
   z-index: 1020;
   overflow: visible;
 }
@@ -90,8 +91,7 @@ nav {
   position: sticky !important;
   width: 100% !important;
 }
-/* 
-Badge Styling */
+
 .navbar-n-badge {
   position: absolute;
   top: -5px; 
@@ -108,7 +108,6 @@ Badge Styling */
   z-index: 10;
 }
 
-/* Dropdown Styling */
 .nav-item-dropdown {
   position: relative;
   height: 100%;
@@ -159,12 +158,10 @@ Badge Styling */
   color: #699c47 !important;
 }
 
-/* --- SIDEBAR STYLES --- */
-
-
 .offcanvas {
   z-index: 1050 !important;
 }
+
 .offcanvas-backdrop {
   z-index: 1040 !important;
 }
@@ -197,8 +194,6 @@ Badge Styling */
   outline: none;
 }
 
-/* --- MEDIA QUERIES --- */
-
 @media (max-width: 1024px) {
   .navbar-container {
     max-width: 1024px;
@@ -227,11 +222,12 @@ Badge Styling */
   #search-bar {
     display: none;
   }
-  .navbar-hamburg svg {
-    display: block;
+  
+  div.navbar-hamburg,
+  div.navbar-hamburg.d-md-none {
+    display: block !important;
   }
   
-  /* Show sidebar content on mobile */
   .mobile-menu-links,
   .mobile-menu-links a,
   .mobile-menu-links hr {
@@ -240,6 +236,36 @@ Badge Styling */
 
   #sidebar-icon {
     display: flex !important;
+    padding: 20px !important;
+  }
+
+  .offcanvas-contact {
+    margin-top: 1.5rem !important; 
+  }
+
+  .offcanvas-contact h3 {
+    font-size: 14px !important; 
+    margin-bottom: 10px !important;
+  }
+
+  .offcanvas-contact .d-flex.gap-4 {
+    gap: 10px !important; 
+    margin-bottom: 8px !important;
+    align-items: center !important;
+  }
+
+  .offcanvas-contact p {
+    font-size: 12px !important; 
+    margin: 0 !important;
+  }
+
+  .offcanvas-contact svg {
+    width: 14px !important; 
+    height: 14px !important;
+  }
+
+  #sidebar-icon .navbar-n-badge {
+    display: none !important; 
   }
 }
 
@@ -264,5 +290,56 @@ Badge Styling */
   }
   #sidebar-icon {
     padding: 0px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-common .sidebar-link, 
+  .navbar-common .nav-link {
+    font-size: 14px !important;
+    padding: 8px 10px !important;
+  }
+  .navbar-common .contact-item {
+    gap: 10px !important;
+    margin-bottom: 12px !important;
+  }
+  .navbar-common .contact-item h6 {
+    font-size: 13px !important;
+    margin-bottom: 2px !important;
+  }
+  .navbar-common .contact-item p {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+  .navbar-common .contact-item .icon-box svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-common .sidebar {
+    width: 250px !important; 
+  }
+  .navbar-common .sidebar-link,
+  .navbar-common .nav-link {
+    font-size: 13px !important; 
+    padding: 5px 8px !important;
+  }
+  .navbar-common .sidebar-header h5 {
+    font-size: 16px !important;
+  }
+  .navbar-common .contact-item h6 {
+    font-size: 12px !important;
+  }
+  .navbar-n-badge {
+    display: none !important;
+  }
+  .navbar-common .contact-item p {
+    font-size: 11px !important;
+  }
+  .navbar-common .contact-item .icon-box svg {
+    width: 12px !important;
+    height: 12px !important;
   }
 }

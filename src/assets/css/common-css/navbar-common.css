@@ -7,7 +7,6 @@
 .navbar-wrap {
   position: sticky;
   top: 0;
-  /* CHANGED: Lowered from 99999 to 1020 so the sidebar (1050) can sit on top */
   z-index: 1020; 
   overflow: visible;
 }
@@ -77,7 +76,6 @@
 #navbar-id {
   position: sticky;
   top: 0;
-  /* CHANGED: Lowered from 99999 to 1020 */
   z-index: 1020;
   background-color: white;
   height: 100px;
@@ -115,7 +113,6 @@
 
 nav {
   padding: 0px !important;
-  /* CHANGED: Removed overflow: hidden to prevent clipping */
   overflow: visible !important; 
   position: sticky;
   top: 0;
@@ -161,12 +158,11 @@ nav {
   outline: none;
 }
 
-/* ADDED: Ensure Offcanvas is always on top of the navbar */
 .offcanvas {
   z-index: 1050 !important;
 }
 
-/* ADDED: Ensure the dark overlay covers the navbar */
+
 .offcanvas-backdrop {
   z-index: 1040 !important;
 }
@@ -197,5 +193,40 @@ nav {
 @media (max-width: 320px) {
   #sidebar-icon {
     padding: 0px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .offcanvas-contact {
+    margin-top: 1.5rem !important; 
+  }
+  
+  .offcanvas-contact h3 {
+    font-size: 14px !important; 
+    margin-bottom: 10px !important;
+  }
+  
+  .offcanvas-contact .d-flex.gap-4 {
+    gap: 10px !important; 
+    margin-bottom: 8px !important;
+    align-items: center !important;
+  }
+  
+  .offcanvas-contact p {
+    font-size: 12px !important; 
+    margin: 0 !important;
+  }
+  
+  .offcanvas-contact svg {
+    width: 14px !important; 
+    height: 14px !important;
+  }
+
+  .navbar-badge {
+    display: none !important; 
+  }
+  
+  #sidebar-icon {
+    padding: 20px !important; 
   }
 }

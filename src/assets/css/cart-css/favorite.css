@@ -1,8 +1,8 @@
 .favorite-container {
-    min-height: 65vh; /* Pushes footer down slightly if there are only 1 or 2 items */
+    min-height: 65vh; 
 }
 
-/* Base card styling */
+
 .fav-card {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -11,7 +11,7 @@
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.08) !important;
 }
 
-/* Custom green elements */
+
 .fav-price {
     color: #699c47;
 }
@@ -25,15 +25,15 @@
 
 .fav-shop-btn:hover,
 .fav-add-btn:hover {
-    background-color: #558039; /* Slightly darker green on hover */
+    background-color: #558039; 
     color: white;
 }
 
 .fav-add-btn:active {
-    transform: scale(0.97); /* Little click animation */
+    transform: scale(0.97); 
 }
 
-/* Delete Button styling */
+
 .fav-remove-btn {
     border-radius: 4px;
 }

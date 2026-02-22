@@ -353,14 +353,14 @@ function Navbar() {
             </li>
             <hr />
             <li>
-              <Link to="/" className="mobile-link">
+              <Link to="/shop" className="mobile-link">
                 Shop
               </Link>
             </li>
             <hr />
             <li>
-              <Link to="/" className="mobile-link">
-                Pages
+              <Link to="/about" className="mobile-link">
+                About
               </Link>
             </li>
             <hr />
