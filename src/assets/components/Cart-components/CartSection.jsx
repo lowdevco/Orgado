@@ -1,7 +1,7 @@
 import React from "react";
 import "../../css/cart-css/cart.css";
 import { useCart } from "../../../context/CartContext";
-
+import { Link } from "react-router-dom";
 
 const loadScript = (src) => {
   return new Promise((resolve) => {
@@ -105,13 +105,12 @@ function CartSection() {
         style={{ minHeight: "68vh" }}
       >
         <h2 className="text-muted mb-4">Your Cart is Empty</h2>
-        <a
-          href="/shop"
+        <Link to="/shop"
           className="btn px-4 py-2 text-white"
           style={{ backgroundColor: "#699c47", border: "none" }}
         >
           Go Back to Shop
-        </a>
+        </Link>
       </div>
     );
   }
@@ -252,12 +251,11 @@ function CartSection() {
               </button>
 
               <div className="text-center mt-3">
-                <a
-                  href="/shop"
+                <Link to="/shop"
                   className="text-decoration-none text-muted small"
                 >
                   ← Continue Shopping
-                </a>
+                </Link>
               </div>
             </div>
           </div>
