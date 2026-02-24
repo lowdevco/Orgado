@@ -2,10 +2,7 @@ import React from "react";
 import "../../css/cart-css/cart.css";
 import { useCart } from "../../../context/CartContext";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
 
-=======
->>>>>>> f1315ad39ae30f08a9d3f2b3af26f52016f7f49e
 
 const loadScript = (src) => {
   return new Promise((resolve) => {
@@ -255,12 +252,8 @@ function CartSection() {
               </button>
 
               <div className="text-center mt-3">
-<<<<<<< HEAD
                 <Link
                   to="/shop"
-=======
-                <Link to="/shop"
->>>>>>> f1315ad39ae30f08a9d3f2b3af26f52016f7f49e
                   className="text-decoration-none text-muted small"
                 >
                   ← Continue Shopping
