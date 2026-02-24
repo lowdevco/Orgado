@@ -12,7 +12,7 @@ function Track() {
                  type="text" 
                  placeholder='Enter Your Order ID'
                  />
-                <button type='submit'> Track Order </button>
+                <button> Track Order </button>
             </form>
         </div>
       </div>

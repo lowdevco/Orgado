@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css/cart-css/cart.css";
 import { useCart } from "../../../context/CartContext";
+import { Link } from "react-router-dom";
 
 
 const loadScript = (src) => {
@@ -252,12 +253,12 @@ function CartSection() {
               </button>
 
               <div className="text-center mt-3">
-                <a
-                  href="/shop"
+                <Link
+                  to="/shop"
                   className="text-decoration-none text-muted small"
                 >
                   ← Continue Shopping
-                </a>
+                </Link>
               </div>
             </div>
           </div>

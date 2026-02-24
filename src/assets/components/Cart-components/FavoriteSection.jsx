@@ -2,6 +2,7 @@ import React from "react";
 import "../../css/cart-css/favorite.css";
 import { useFavorite } from "../../../context/FavoriteContext";
 import { useCart } from "../../../context/CartContext";
+import { Link } from "react-router-dom";
 
 function FavoriteSection() {
   const { favorites, removeFromFavorite } = useFavorite();
@@ -15,9 +16,9 @@ function FavoriteSection() {
         style={{ minHeight: "68vh" }}
       >
         <h2 className="text-muted mb-4">Your Wishlist is Empty</h2>
-        <a href="/shop" className="btn px-4 py-2 text-white fav-shop-btn">
+        <Link to="/shop" className="btn px-4 py-2 text-white fav-shop-btn">
           Go Back to Shop
-        </a>
+        </Link>
       </div>
     );
   }
