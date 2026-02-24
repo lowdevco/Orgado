@@ -9,9 +9,9 @@ function Footer() {
       <div className="footer-top container-fluid d-flex justify-content-center align-items-center">
         <div className="container">
           <div className="d-flex justify-content-center align-items-center mb-5">
-            <a href="">
+            <Link to="/">
               <img src={footerlogo} alt="logo" />
-            </a>
+            </Link>
           </div>
           <div
             className=" d-flex justify-content-center align-items-center row mb-4 "

@@ -20,9 +20,9 @@ function NavbarCommon() {
           <div className="container-fluid d-flex justify-content-between py-3 align-items-center navbar-container">
             {/* */}
             <div>
-              <a href="" className="navbar-brand">
+              <Link to="/" className="navbar-brand">
                 <img src={navbarlogo} alt="logo" />
-              </a>
+              </Link>
             </div>
 
             {/* hidden nav */}
