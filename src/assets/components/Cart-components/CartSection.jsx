@@ -3,7 +3,6 @@ import "../../css/cart-css/cart.css";
 import { useCart } from "../../../context/CartContext";
 import { Link } from "react-router-dom";
 
-
 const loadScript = (src) => {
   return new Promise((resolve) => {
     const script = document.createElement("script");
@@ -15,7 +14,6 @@ const loadScript = (src) => {
 };
 
 function CartSection() {
-
   const { cart, removeFromCart, updateQuantity, clearCart } = useCart();
 
   const cartTotal = cart.reduce(
@@ -33,7 +31,6 @@ function CartSection() {
     }
   };
 
-  
   const BACKEND_URL = "https://orgado-api.onrender.com";
 
   // Razorpay Checkout Handler
@@ -55,17 +52,16 @@ function CartSection() {
         body: JSON.stringify({ amount: cartTotal }),
       }).then((t) => t.json());
 
-      //  Configure Razorpay 
+      //  Configure Razorpay
 
       const options = {
-        key: "rzp_live_SIrz1l5R2x8fRB", 
+        key: "rzp_live_SIrz1l5R2x8fRB",
         amount: data.amount,
         currency: "INR",
         name: "Orgado Store",
         description: "Shopping Cart Purchase",
         order_id: data.id,
         handler: async function (response) {
-
           //  Verifying payment on  Render backend
 
           const verifyData = await fetch(`${BACKEND_URL}/verify-payment`, {
@@ -106,7 +102,8 @@ function CartSection() {
         style={{ minHeight: "68vh" }}
       >
         <h2 className="text-muted mb-4">Your Cart is Empty</h2>
-        <Link to="/shop"
+        <Link
+          to="/shop"
           className="btn px-4 py-2 text-white"
           style={{ backgroundColor: "#699c47", border: "none" }}
         >

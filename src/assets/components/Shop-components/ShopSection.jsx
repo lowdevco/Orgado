@@ -23,7 +23,7 @@ function ShopSection() {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           rows: 2,

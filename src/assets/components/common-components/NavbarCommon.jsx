@@ -381,7 +381,7 @@ function NavbarCommon() {
           </div>
 
           <div className="navbar-icon d-flex m-2" id="nav-badge">
-            <Link to="/favorite" style={{ color: "black" }}>
+            <Link to="/fav" style={{ color: "black" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

@@ -34,6 +34,13 @@ function TrendingProduct() {
         },
       },
       {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll:1
+        }
+      },
+      {
         breakpoint: 425,
         settings: {
           slidesToShow: 2,
