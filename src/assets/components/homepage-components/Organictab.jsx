@@ -198,7 +198,7 @@ function Organictab() {
                 <div className="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6">
                   <div className="organic-cerosal">
                     <Slider ref={sliderRef} {...settings}>
-                      {productDatas.slice(7, 10).map((product) => (
+                      {productDatas.slice(16, 20).map((product) => (
                         <div key={product.id}>
                           <div
                             className="organic-slide"
@@ -279,7 +279,7 @@ function Organictab() {
                 </div>
                 <br />
                 <div className="row">
-                  {productDatas.slice(5, 9).map((product) => {
+                  {productDatas.slice(10, 14).map((product) => {
                     const isFavorite = favorites?.some(
                       (fav) => fav.id === product.id,
                     );
