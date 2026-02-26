@@ -83,7 +83,7 @@ function SearchBox() {
               </div>
               <div className="search-text">
                 <h6>8:30 AM - 9:30 PM</h6>
-                <h4>695 023 52 </h4>
+                <h4>1600 3424</h4>
               </div>
             </div>
           </div>

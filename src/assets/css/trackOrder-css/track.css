@@ -39,7 +39,7 @@
     color: #699c47;
 }
 
-@media (max-width:425px) {
+@media (max-width:760px) {
     .track{
         flex-direction: column;
     }
@@ -48,7 +48,7 @@
     }
 }
 
-@media (max-width:375px) {
+@media (max-width:420px) {
     .track-div input{
         width: 100%;
     }

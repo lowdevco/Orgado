@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import productDatas from "../../../data/productDatas";
 import { useCart } from "../../../context/CartContext";
-
+import ProductModal from "../common-components/ProductModal.jsx";
 import { useFavorite } from "../../../context/FavoriteContext";
 
 // product 
@@ -18,6 +18,19 @@ function TrendingProduct() {
  
   const { favorites, toggleFavorite } = useFavorite();
 
+    const [selectedProduct, setSelectedProduct] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const openModal = (product) => {
+      setSelectedProduct(product);
+      setIsModalOpen(true);
+    };
+  
+    const closeModal = () => {
+      setIsModalOpen(false);
+      setSelectedProduct(null);
+    };
+
   const settings = {
     dots: false,
     infinite: true,
@@ -27,28 +40,28 @@ function TrendingProduct() {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1430,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 1020,
         settings: {
           slidesToShow: 2,
           slidesToScroll:1
         }
       },
       {
-        breakpoint: 425,
+        breakpoint: 760,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 375,
+        breakpoint: 420,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -101,8 +114,7 @@ function TrendingProduct() {
           </div>
 
           <Slider ref={sliderRef} {...settings} className="trending-slider">
-            {trendingData.map((product) => {
-             
+            {trendingData.slice(4, 24).map((product) => {
               const isFavorite = favorites?.some(
                 (fav) => fav.id === product.id,
               );
@@ -147,6 +159,7 @@ function TrendingProduct() {
                             fill="currentColor"
                             className="bi bi-eye"
                             viewBox="0 0 16 16"
+                            onClick={() => openModal(product)}
                           >
                             <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
                             <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
@@ -192,6 +205,11 @@ function TrendingProduct() {
           </Slider>
         </div>
       </div>
+      <ProductModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        product={selectedProduct}
+      />
     </div>
   );
 }

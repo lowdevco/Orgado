@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,10 +6,24 @@ import "../../css/shop-css/shop.css";
 import productDatas from "../../../data/productDatas";
 import { useCart } from "../../../context/CartContext";
 import { useFavorite } from "../../../context/FavoriteContext";
+import ProductModal from "../common-components/ProductModal.jsx";
 
 function ShopSection() {
   const { addToCart } = useCart();
   const { favorites, toggleFavorite } = useFavorite();
+
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (product) => {
+    setSelectedProduct(product);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProduct(null);
+  };
 
   const sliderRef = useRef(null);
 
@@ -23,21 +37,21 @@ function ShopSection() {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1430,
         settings: {
           slidesToShow: 3,
           rows: 2,
         },
       },
       {
-        breakpoint: 992,
+        breakpoint: 1020,
         settings: {
           slidesToShow: 2,
           rows: 2,
         },
       },
       {
-        breakpoint: 576,
+        breakpoint: 760,
         settings: {
           slidesToShow: 1,
           rows: 2,
@@ -73,7 +87,6 @@ function ShopSection() {
       <div className="shop-slider-wrapper">
         <Slider ref={sliderRef} {...settings} className="shop-slider">
           {productDatas.map((product) => {
-       
             const isFavorite = favorites?.some((fav) => fav.id === product.id);
 
             return (
@@ -113,6 +126,7 @@ function ShopSection() {
                         className="add-to-watch-btn"
                         id="shop-card-btn"
                         title="Quick View"
+                        onClick={() => openModal(product)}
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -166,6 +180,11 @@ function ShopSection() {
           })}
         </Slider>
       </div>
+      <ProductModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        product={selectedProduct}
+      />
     </div>
   );
 }

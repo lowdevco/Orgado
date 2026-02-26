@@ -28,7 +28,7 @@
     margin-bottom: 30px;
 }
 
-@media (max-width:768px) {
+@media (max-width:1020px) {
     .not-found h1{
         font-size: 8rem;
     }
@@ -40,7 +40,7 @@
     }
 }
 
-@media (max-width:1024px){
+@media (max-width:1430px){
     .not-found h1{
         font-size: 10rem;
     }
@@ -52,7 +52,7 @@
     }
 }
 
-@media (max-width:425px){
+@media (max-width:760px){
     .not-found h1{
         font-size: 6rem;
     }

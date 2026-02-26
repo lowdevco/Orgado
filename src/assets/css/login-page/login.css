@@ -61,13 +61,13 @@
 }
 
 
-@media (max-width:1440px) {
+@media (max-width:2550px) {
     .login-form-container form{
         margin-left: 250px;
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:1430px) {
     .login-form-container form{
         margin-left: 80px;
         position: relative;
@@ -75,7 +75,7 @@
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:1020px) {
     #login-form button{
         width: 100%;
     }

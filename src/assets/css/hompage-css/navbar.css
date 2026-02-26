@@ -194,9 +194,9 @@ nav {
   outline: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1430px) {
   .navbar-container {
-    max-width: 1024px;
+    max-width: 100% !important;
   }
   .navbar-container a {
     font-size: 12px;
@@ -210,7 +210,7 @@ nav {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
   #navbar-links div {
     display: none;
   }
@@ -269,7 +269,7 @@ nav {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 760px) {
   .navbar-icon1 {
     height: 28px;
     width: 28px;
@@ -284,7 +284,7 @@ nav {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
   #navbar-icon-login {
     display: none;
   }
@@ -317,7 +317,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 760px) {
   .navbar-common .sidebar {
     width: 250px !important; 
   }

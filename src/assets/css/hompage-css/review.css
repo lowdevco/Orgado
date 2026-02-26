@@ -156,7 +156,7 @@
   font-weight: 800 !important;
 }
 
-@media (max-width:1024px) {
+@media (max-width:1430px) {
   .review-tab {
     width: 100% !important;
   }
@@ -165,27 +165,27 @@
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:1020px) {
   .review-tab-bottom{
     margin-left: 20px;
   }
 }
 
-@media (max-width:425px) {
+@media (max-width:760px) {
   .review-tab-bottom{
     margin-left: 50px;
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:420px) {
   .review-tab-bottom{
     width: 100% !important;
     margin-left: 0px;
   }
 }
 
-@media (max-width:320px) {
-  .revie-tab-bottom{
+@media (max-width:370px) {
+  .review-tab-bottom{
     margin-left: 0px;
   }
 }

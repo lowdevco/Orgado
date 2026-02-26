@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "../../css/hompage-css/organic-tab.css";
 import { Link } from "react-router-dom";
 import productDatas from "../../../data/productDatas";
@@ -8,12 +8,14 @@ import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import { useCart } from "../../../context/CartContext";
 import { useFavorite } from "../../../context/FavoriteContext";
+import ProductModal from "../common-components/ProductModal.jsx";
 
 const ProductActionButtons = ({
   product,
   addToCart,
   toggleFavorite,
   favorites,
+  openModal,
 }) => {
   const isFavorite = favorites?.some((fav) => fav.id === product.id);
 
@@ -36,7 +38,11 @@ const ProductActionButtons = ({
           <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
         </svg>
       </button>
-      <button className="add-to-watch-btn" id="card-btn">
+      <button
+        className="add-to-watch-btn"
+        id="card-btn"
+        onClick={() => openModal(product)} 
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -79,6 +85,20 @@ const ProductActionButtons = ({
 function Organictab() {
   const { addToCart } = useCart();
   const { favorites, toggleFavorite } = useFavorite();
+
+
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (product) => {
+    setSelectedProduct(product);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProduct(null);
+  };
 
   const settings = {
     dots: false,
@@ -261,6 +281,7 @@ function Organictab() {
                               addToCart={addToCart}
                               toggleFavorite={toggleFavorite}
                               favorites={favorites}
+                              openModal={openModal} 
                             />
                           </div>
                         </div>
@@ -321,6 +342,7 @@ function Organictab() {
                               <button
                                 className="add-to-watch-btn"
                                 id="card-btn"
+                                onClick={() => openModal(product)} 
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
@@ -376,6 +398,13 @@ function Organictab() {
           </div>
         </div>
       </div>
+
+      <ProductModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        product={selectedProduct}
+        handleAddToCart={addToCart}
+      />
     </div>
   );
 }

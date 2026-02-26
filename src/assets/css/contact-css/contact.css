@@ -93,7 +93,7 @@
   }
 }
 
-@media (max-width:1024px) {
+@media (max-width:1430px) {
   .contact-rt{
     width: auto;
   }
@@ -105,7 +105,7 @@
   }
 }
 
-@media (max-width:425px) {
+@media (max-width:760px) {
     .contact-input-name{
       margin-bottom: 20px;
     }
@@ -114,7 +114,7 @@
     }
 }
 
-@media (max-width:320px) {
+@media (max-width:370px) {
   .contact-rt{
     display: none;
   }

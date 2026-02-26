@@ -52,7 +52,7 @@
   color: #699c47;
 }
 
-@media (max-width:768px) {
+@media (max-width:1020px) {
   #footer-links{
     justify-content: start;
   }

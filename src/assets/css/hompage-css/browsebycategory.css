@@ -51,31 +51,31 @@
   border: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1430px) {
   .category-tab {
     margin-left: 100px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
   .category-tab {
     margin-left: 20px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 760px) {
   .category-tab {
     margin-left: 50px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
   .category-tab {
     margin-left: 40px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
   .category-tab {
     margin-left: 5px;
     padding: 20px;

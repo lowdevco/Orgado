@@ -120,7 +120,7 @@
   transition: background-color 0.3s ease;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1430px) {
   .trending-card {
     width: 225px;
     height: 350px;
@@ -137,7 +137,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
   .trending-card {
     width: 225px;
     height: 345px;
@@ -154,7 +154,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 760px) {
   .trending-lt {
     height: 250px;
     padding-left: 20px;
@@ -171,7 +171,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
   .trending-card {
     width: 300px;
     margin-left: 20px;
@@ -185,7 +185,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
   .trending-card {
     width: 260px;
     height: 250px;

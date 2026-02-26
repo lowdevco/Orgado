@@ -167,7 +167,7 @@ nav {
   z-index: 1040 !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
   .mobile-menu-links,
   .mobile-menu-links a,
   .mobile-menu-links hr {
@@ -179,7 +179,7 @@ nav {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 760px) {
   .navbar-right-icons {
     gap: 12px !important;
   }
@@ -190,13 +190,13 @@ nav {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
   #sidebar-icon {
     padding: 0px !important;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
   .offcanvas-contact {
     margin-top: 1.5rem !important; 
   }

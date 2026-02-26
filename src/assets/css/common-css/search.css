@@ -104,7 +104,7 @@
 }
 
 
-@media (max-width:1024px ) {
+@media (max-width:1430px ) {
   .search-text h4{
     display: none;
   }
@@ -116,7 +116,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
   .search-text h6{
     font-size: 12px;
   }
@@ -128,7 +128,7 @@
   }
 }
 
-@media (max-width:500px) {
+@media (max-width: 760px) {
   .searchbox-div{
     display: none;
   }

@@ -90,19 +90,19 @@
 }
 
 /* Responsiveness */
-@media (max-width: 1024px) {
+@media (max-width: 1430px) {
   .shop-card {
     height: 350px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
   .shop-card {
     height: 345px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 760px) {
   .shop-card {
     height: 300px;
     max-width: 100%;
@@ -116,7 +116,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
   .shop-card {
     height: 280px;
   }
