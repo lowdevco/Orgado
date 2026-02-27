@@ -9,11 +9,17 @@
   font-family: "jost", sans-serif;
 }
 
-*a {
-  text-decoration: none !important;
+a { 
+  text-decoration: none !important;  
 }
 
 Link{
   text-decoration: none !important;
   color: black !important;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100vw;
 }

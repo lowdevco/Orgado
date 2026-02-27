@@ -90,8 +90,8 @@ function ShopSection() {
             const isFavorite = favorites?.some((fav) => fav.id === product.id);
 
             return (
-              <div key={product.id} className="p-2 p-md-3">
-                <div className="shop-card mx-auto">
+              <div key={product.id}>
+                <div className="shop-card">
                   <div
                     className="shop-card-top"
                     style={{
@@ -105,8 +105,7 @@ function ShopSection() {
                       style={{ height: "100%" }}
                     >
                       <button
-                        className="add-to-cart-btn"
-                        id="shop-card-btn"
+                        className="add-to-cart-btn shop-card-btn"
                         onClick={() => addToCart(product)}
                         title="Add to Cart"
                       >
@@ -123,8 +122,7 @@ function ShopSection() {
                         </svg>
                       </button>
                       <button
-                        className="add-to-watch-btn"
-                        id="shop-card-btn"
+                        className="add-to-watch-btn shop-card-btn"
                         title="Quick View"
                         onClick={() => openModal(product)}
                       >
@@ -142,8 +140,7 @@ function ShopSection() {
                       </button>
 
                       <button
-                        className="add-to-like-btn"
-                        id="shop-card-btn"
+                        className="add-to-like-btn shop-card-btn"
                         title="Add to Wishlist"
                         onClick={() => toggleFavorite(product)}
                       >
@@ -170,7 +167,7 @@ function ShopSection() {
 
                   <div className="shop-card-bottom text-center">
                     <h4 className="shop-prod-name">
-                      <a href="#">{product.name}</a>
+                      <span style={{ cursor: "pointer" }}>{product.name}</span>
                     </h4>
                     <h4 className="shop-prod-price">₹{product.price}</h4>
                   </div>

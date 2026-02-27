@@ -82,7 +82,7 @@ function TrendingProduct() {
 
         <div className="col-xl-9 col-lg-9 col-md-8 col-12 trending-rt">
           <div className="d-flex align-items-center justify-content-between mb-3">
-            <div>
+            <div className="mobile-none">
               <h1>You May Missed</h1>
             </div>
             <div>

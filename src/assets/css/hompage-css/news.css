@@ -1,20 +1,23 @@
 #brand-container {
-  height: 300px;
+  min-height: 200px;
   width: 100%;
   background-color: #f8f8f8;
-  padding: 80px 20px;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
 }
 
 #brand {
-  width: 80%;
-  height: 150px;
-  margin-left: 200px;
-  padding: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #brand img {
   height: 120px;
   width: 120px;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .news-section h6 {
@@ -36,12 +39,9 @@
 }
 
 .news-card {
-  width: 400px !important;
-  height: 480px;
-}
-
-.news-container {
-  padding: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
 }
 
 .news-img p {
@@ -56,6 +56,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 #news-img-1 {
@@ -73,33 +75,9 @@
   color: black;
 }
 
-@media (max-width:1430px) {
-  #brand{
-    margin-left: 120px;
-  }
-  #news-card-1,#news-card-2{
-    margin-left: 40px;
-  }
-  #news-card-3{
-    margin-left: 250px;
-  }
-}
-
-@media (max-width:1020px) {
-  #brand{
-    margin-left: 70px;
-  }
-  #brand-container{
-    padding: 60px 20px;
+@media (max-width: 1020px) {
+  #brand-container {
+    padding: 40px 20px;
     display: none;
-  }
-  #news-card-1,#news-card-2,#news-card-3{
-    margin-left: 145px ;
-  }
-}
-
-@media (max-width:760px) {
-  #news-card-1,#news-card-2,#news-card-3{
-    margin-left: 0px;
   }
 }

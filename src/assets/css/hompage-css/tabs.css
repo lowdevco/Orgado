@@ -1,16 +1,23 @@
-#tab-icon {
+
+.tab-icon {
   border-radius: 50%;
   background-color: #f8f8f8;
   height: 50px;
   width: 50px;
+  min-width: 50px;
+  transition: all 0.3s ease;
 }
 
-#tab-icon svg:hover {
+.tab-icon svg {
+  transition: color 0.3s ease;
+}
+
+.tab-icon:hover {
   cursor: pointer;
-  color: white;
-}
-
-#tab-icon:hover {
   background-color: #80b500;
   box-shadow: 0 10px 20px 0 rgba(8, 0, 42, 0.08);
+}
+
+.tab-icon:hover svg {
+  color: white;
 }
