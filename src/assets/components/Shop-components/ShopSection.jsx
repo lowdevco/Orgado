@@ -46,6 +46,7 @@ function ShopSection() {
       {
         breakpoint: 1020,
         settings: {
+          dots: false,
           slidesToShow: 2,
           rows: 2,
         },
@@ -53,8 +54,17 @@ function ShopSection() {
       {
         breakpoint: 760,
         settings: {
-          slidesToShow: 1,
+          dots: false,
+          slidesToShow: 2,
           rows: 2,
+        },
+      },
+      {
+        breakpoint: 420,
+        settings: {
+          dots: false,
+          slidesToShow: 1,
+          rows: 1,
         },
       },
     ],

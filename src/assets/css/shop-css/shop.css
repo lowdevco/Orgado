@@ -3,11 +3,41 @@
   font-weight: bold;
 }
 
+
+.shop-slider-wrapper {
+  margin-bottom: 20px;
+  overflow-x: hidden; 
+  padding-bottom: 50px; 
+  padding-top: 10px;
+}
+
+
+.shop-slider .slick-slide > div {
+  margin-bottom: 20px; 
+  display: flex;
+  justify-content: center;
+}
+
+.shop-slider .slick-dots {
+  bottom: 0px; 
+}
+
+.shop-slider .slick-dots li button:before {
+  color: #699c47;
+  font-size: 10px;
+}
+
+.shop-slider .slick-dots li.slick-active button:before {
+  color: #699c47;
+  opacity: 1;
+}
+
+
 .shop-card {
   height: 400px;
   width: 95%; 
-  max-width: 310px;
-  margin: 0 auto 20px auto; 
+  max-width: 310px; 
+  margin: 0 auto;
   border-radius: 10px;
   background-color: white;
   border: 1px solid #e2e2e2;
@@ -39,13 +69,13 @@
   margin: 10px 0 5px 0;
 }
 
-.shop-prod-name span {
+.shop-prod-name a {
   text-decoration: none;
   color: black;
   transition: color 0.3s;
 }
 
-.shop-prod-name span:hover {
+.shop-prod-name a:hover {
   color: #699c47;
 }
 
@@ -88,60 +118,6 @@
   transition: background-color 0.3s ease;
 }
 
-/* Responsiveness */
-
-@media (max-width: 1430px) {
-  .shop-card {
-    height: 350px;
-  }
-}
-
-@media (max-width: 1020px) {
-  .shop-card {
-    height: 345px;
-  }
-}
-
-@media (max-width: 760px) {
-  .shop-card {
-    height: 300px;
-    width: 95%; 
-  }
-  .shop-card-bottom {
-    padding: 5px;
-  }
-  .shop-prod-name {
-    font-size: 18px;
-    padding-top: 10px;
-  }
-}
-
-@media (max-width: 370px) {
-  .shop-card {
-    height: 280px;
-  }
-  .shop-prod-name {
-    font-size: 16px;
-  }
-  .shop-prod-price {
-    font-size: 15px;
-  }
-}
-
-.shop-slider .slick-dots {
-  bottom: -35px;
-}
-
-.shop-slider .slick-dots li button:before {
-  color: #699c47;
-  font-size: 10px;
-}
-
-.shop-slider .slick-dots li.slick-active button:before {
-  color: #699c47;
-  opacity: 1;
-}
-
 .shop-carousel-btn {
   background-color: #cfcfcf1f;
   color: rgb(201, 177, 201);
@@ -163,6 +139,39 @@
   border-color: #699c47;
 }
 
-.shop-slider-wrapper {
-  margin-bottom: 50px;
+@media (max-width: 1430px) {
+  .shop-card {
+    height: 350px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .shop-card {
+    height: 345px;
+  }
+}
+
+@media (max-width: 760px) {
+  .shop-card {
+    height: 300px;
+  }
+  .shop-card-bottom {
+    padding: 5px;
+  }
+  .shop-prod-name {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 370px) {
+  .shop-card {
+    height: 280px;
+  }
+  .shop-prod-name {
+    font-size: 16px;
+  }
+  .shop-prod-price {
+    font-size: 15px;
+  }
 }

@@ -28,6 +28,11 @@
   padding: 10px;
 }
 
+.trending-slider-wrapper {
+  overflow-x: hidden;
+  padding: 10px 0;
+}
+
 .trending-card {
   width: 95%;
   max-width: 310px;
@@ -36,12 +41,18 @@
   border-radius: 10px;
   background-color: white;
   border: 1px solid #e2e2e2;
+  transition: box-shadow 0.3s ease;
+}
+
+.trending-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
 }
 
 .trending-card-top {
   height: 60%;
   background-color: white;
   border-radius: 10px 10px 0 0;
+  position: relative;
 }
 
 .trending-card-bottom {
@@ -63,12 +74,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cerousel-btn:hover {
   background-color: #699c47;
-  transition: color 0.3s;
   color: white;
 }
 
@@ -84,30 +94,38 @@
 .prod-name a {
   text-decoration: none;
   color: black;
+  transition: color 0.3s;
 }
 
 .prod-name a:hover {
   color: #699c47;
-  transition: color 0.3s;
-  text-decoration: none;
 }
 
 .prod-price {
   font-size: 18px;
-  font-weight: 500;
   font-weight: 700;
   color: #699c47;
 }
 
-#card-btn {
+.card-btn {
   background-color: whitesmoke;
   color: black;
   border: 0.2px solid rgba(0, 0, 0, 0.288) !important;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: #699c47;
+  color: white;
+  border-color: #699c47 !important;
 }
 
 .hover-element {
@@ -116,21 +134,16 @@
 
 .trending-card-top:hover .hover-element {
   display: flex !important;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   border-radius: 10px 10px 0 0;
+  background-color: rgba(255, 255, 255, 0.2);
   transition: background-color 0.3s ease;
 }
 
 @media (max-width: 1430px) {
   .trending-card {
     height: 350px;
-  }
-  .trending-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
   }
   .trending-lt {
     height: 420px;
@@ -154,7 +167,7 @@
 }
 
 @media (max-width: 760px) {
-  .mobile-none{
+  .mobile-none {
     display: none !important;
   }
   .trending-lt {
